@@ -5,6 +5,6 @@ export const NavWrapper = styled.nav`
   justify-content: center;
   align-items: center;
   background: ${({ theme }) => theme.colors.main};
-  width: 260px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 `;
