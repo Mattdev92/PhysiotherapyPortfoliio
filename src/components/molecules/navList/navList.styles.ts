@@ -16,7 +16,7 @@ export const StyledLink = styled(NavLink)`
     &:before {
       content: '';
       position: absolute;
-      top: 15px;
+      top: 10px;
       height: 30px;
       width: 100%;
       border-bottom: 2px solid black;

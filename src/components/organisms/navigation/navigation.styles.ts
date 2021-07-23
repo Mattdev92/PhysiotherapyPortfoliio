@@ -12,5 +12,5 @@ export const NavWrapper = styled.nav`
 
 export const StyledIcon = styled(NavLink)`
   position: absolute;
-  top: 35px;
+  top: 20px;
 `;

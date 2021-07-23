@@ -9,7 +9,7 @@ const SocialNetworkIcons: FC = () => {
       <IconWrapper>
         {SocialNetworkIcon.map((item, i) => (
           <StyledIcon href={SocialNetworkUrl[i]} key={i}>
-            <SvgIcon Icon={item} height={30} width={30} />
+            <SvgIcon Icon={item} height={25} width={25} />
           </StyledIcon>
         ))}
       </IconWrapper>
