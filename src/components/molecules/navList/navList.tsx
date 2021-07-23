@@ -8,7 +8,7 @@ const NavList: FC = () => {
   return (
     <ListWrapper>
       {Navdata.map((item, i) => (
-        <StyledLink to={Url[i]}>
+        <StyledLink to={Url[i]} key={i}>
           <Text content={item} key={item} />
         </StyledLink>
       ))}
