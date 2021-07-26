@@ -9,7 +9,13 @@ const NavList: FC = () => {
     <ListWrapper>
       {Navdata.map((item, i) => (
         <StyledLink to={Url[i]} key={i}>
-          <Text content={item} key={item} />
+          <Text
+            content={item}
+            key={item}
+            fontSize={'S'}
+            fontWeight={'S'}
+            margin={17}
+          />
         </StyledLink>
       ))}
     </ListWrapper>

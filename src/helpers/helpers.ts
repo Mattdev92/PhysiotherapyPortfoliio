@@ -10,3 +10,12 @@ export const SocialNetworkUrl = [
   'https://github.com/Mattdev92',
   'https://www.linkedin.com/in/mateusz-grzejszczyk',
 ];
+export const specialText = `"Prostota to szczyt wyrafinowania"
+— Walter Isaacson, Steve Jobs`;
+export const mainContentData = [
+  'CZEŚĆ, tu MATI',
+  'WEB DEVELOPER',
+  'Front End Developer / React enthusiast',
+];
+export const mainContentDataFontWight = ['S', 'M', 'XS'];
+export const mainContentDataFontSize = ['M', 'M', 'S'];
