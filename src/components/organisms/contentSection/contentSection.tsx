@@ -3,11 +3,13 @@ import { ContentWrapper } from './contentSection.styles';
 import { ContentSectionProps } from './contentSection.types';
 import SocialNetworkIcons from 'components/molecules/socialNetworkIcons/socialNetworkIcons';
 
-const ContentSection: FC<ContentSectionProps> = ({ children }) => (
-  <ContentWrapper>
-    <SocialNetworkIcons />
-    {children}
-  </ContentWrapper>
-);
+const ContentSection: FC<ContentSectionProps> = ({ children }) => {
+  return (
+    <ContentWrapper>
+      <SocialNetworkIcons />
+      {children}
+    </ContentWrapper>
+  );
+};
 
 export default ContentSection;

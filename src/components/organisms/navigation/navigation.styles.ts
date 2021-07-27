@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { NavigationWrapperProps } from './navigation.types';
 
-export const NavWrapper = styled.nav`
+export const NavWrapper = styled.nav<NavigationWrapperProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +10,15 @@ export const NavWrapper = styled.nav`
   grid-column: 1/3;
   grid-row: 1/4;
   @media (max-width: 580px) {
-    display: none;
+    transform: ${({ mobile }) =>
+      mobile ? 'translateX(0)' : 'translateX(-300px)'};
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 300px;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
   }
 `;
 

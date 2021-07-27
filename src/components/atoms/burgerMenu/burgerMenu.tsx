@@ -1,9 +1,10 @@
 import { FC } from 'react';
 import { BurgerWrapper, OuterLine, InnerLine } from './burgerMenu.styles';
+import { BurgerMenuProps } from './burgerMenu.types';
 
-const BurgerMenu: FC = () => {
+const BurgerMenu: FC<BurgerMenuProps> = ({ onClick }) => {
   return (
-    <BurgerWrapper>
+    <BurgerWrapper onClick={onClick}>
       <OuterLine />
       <InnerLine />
       <OuterLine />

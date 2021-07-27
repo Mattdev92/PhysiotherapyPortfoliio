@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { BurgerWrapperProps } from './burgerMenu.types';
 
-export const BurgerWrapper = styled.div`
+export const BurgerWrapper = styled.div<BurgerWrapperProps>`
   display: none;
   width: 40px;
   height: 30px;

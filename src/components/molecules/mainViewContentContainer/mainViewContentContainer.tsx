@@ -5,9 +5,9 @@ import {
   mainContentDataFontSize,
   mainContentDataFontWight,
 } from 'helpers/helpers';
-import { ContentWrapper } from './contentContainer.styles';
+import { ContentWrapper } from './mainViewContentContainer.styles';
 
-const ContentContainer: FC = () => {
+const MainViewContentContainer: FC = () => {
   return (
     <ContentWrapper>
       {mainContentData.map((item, i) => (
@@ -24,4 +24,4 @@ const ContentContainer: FC = () => {
   );
 };
 
-export default ContentContainer;
+export default MainViewContentContainer;

@@ -22,4 +22,16 @@ export const StyledLink = styled(NavLink)`
       border-bottom: 2px solid black;
     }
   }
+  @media (max-width: 580px) {
+    &.active {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        height: 30px;
+        width: 100%;
+        border-bottom: 2px solid black;
+      }
+    }
+  }
 `;
