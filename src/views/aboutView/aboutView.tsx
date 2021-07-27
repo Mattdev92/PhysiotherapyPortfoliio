@@ -1,13 +1,13 @@
-import MainViewContentContainer from 'components/molecules/mainViewContentContainer/mainViewContentContainer';
-import SpecialTextContainer from 'components/molecules/specialTextContainer/specialTextContainer';
 import { FC } from 'react';
+import AboutMeContentContainer from 'components/molecules/aboutMeContentContainer/aboutMeContentContainer';
 import MainTemplate from 'templates/mainTemplate';
+import HelloTextContainer from 'components/molecules/textMeTextContainer/textMeTextContainer';
 
 const AboutView: FC = () => {
   return (
     <MainTemplate>
-      <MainViewContentContainer />
-      <SpecialTextContainer />
+      <AboutMeContentContainer />
+      <HelloTextContainer />
     </MainTemplate>
   );
 };

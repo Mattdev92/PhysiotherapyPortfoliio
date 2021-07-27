@@ -4,6 +4,7 @@ import { NavigationWrapperProps } from './navigation.types';
 
 export const NavWrapper = styled.nav<NavigationWrapperProps>`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${({ theme }) => theme.colors.main};
