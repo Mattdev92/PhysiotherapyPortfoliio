@@ -10,9 +10,3 @@ export const ContentWrapper = styled.div`
   justify-content: flex-end;
   align-items: center;
 `;
-
-export const StyledImage = styled.img`
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-`;

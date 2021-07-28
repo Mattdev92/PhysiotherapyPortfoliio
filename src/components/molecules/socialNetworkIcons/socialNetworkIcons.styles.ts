@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  top: 20px;
+  position: sticky;
   margin: 20px;
   grid-column: 9 / 11;
   grid-row: 1 / 2;

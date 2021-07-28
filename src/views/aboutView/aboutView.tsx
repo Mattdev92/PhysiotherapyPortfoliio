@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import AboutMeContentContainer from 'components/molecules/aboutMeContentContainer/aboutMeContentContainer';
-import MainTemplate from 'templates/mainTemplate';
+import AboutMeContentContainer from 'components/molecules/aboutContent/aboutContent';
+import MainTemplate from 'templates/mainTemplate/mainTemplate';
 import HelloTextContainer from 'components/molecules/textMeTextContainer/textMeTextContainer';
 
 const AboutView: FC = () => {

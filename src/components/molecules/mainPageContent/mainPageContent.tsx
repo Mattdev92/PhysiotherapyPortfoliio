@@ -5,11 +5,11 @@ import {
   mainContentDataFontSize,
   mainContentDataFontWight,
 } from 'helpers/helpers';
-import { ContentWrapper } from './mainViewContentContainer.styles';
+import ContentTemplate from 'templates/contentTemplate/contentTemplate';
 
-const MainViewContentContainer: FC = () => {
+const MainPageContent: FC = () => {
   return (
-    <ContentWrapper>
+    <ContentTemplate>
       {mainContentData.map((item, i) => (
         <Text
           content={item}
@@ -20,8 +20,8 @@ const MainViewContentContainer: FC = () => {
           background={item === 'WEB DEVELOPER' ? true : false}
         />
       ))}
-    </ContentWrapper>
+    </ContentTemplate>
   );
 };
 
-export default MainViewContentContainer;
+export default MainPageContent;

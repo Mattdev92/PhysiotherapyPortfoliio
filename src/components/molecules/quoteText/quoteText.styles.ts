@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SpecialTextWrapper = styled.div`
+export const QuoteTextWrapper = styled.div`
   margin: 10px;
   display: inline-block;
   grid-row: 3 / 4;

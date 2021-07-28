@@ -34,3 +34,13 @@ export const aboutContentData = [
   'Chęć dalszego rozwoju sprawiła, że w przeciągu roku ukończyłem studia podyplomowe na kierunku Frontend Development z React, co w efekcie zaowocowało podjęciem pracy na pełen etat jako React Developer.',
   'Mój mały sukces motywuje mnie do dalszego rozwoju dlatego tworzę własne projekty oraz śledzę z zaciekawieniem świat IT, a w szczególności dynamicznie zmieniające się środowisko Front Endu.',
 ];
+
+// Skills data
+
+export const pseudoCodeMain = ['<main>', '<main/>'];
+export const pseudoCodeNav = ['<nav>', '</nav>'];
+export const pseudoCodeUl = [`<ul class='`, '</ul>'];
+export const pseudoCodeSection = [`<section class='`, '</section>'];
+export const marginPseudoCode = [
+  5, 15, 25, 25, 25, 25, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 5,
+];

@@ -1,11 +1,11 @@
 import { FC } from 'react';
-import MainTemplate from 'templates/mainTemplate';
-import ContentContainer from 'components/molecules/mainViewContentContainer/mainViewContentContainer';
-import SpecialTextContainer from 'components/molecules/specialTextContainer/specialTextContainer';
+import MainTemplate from 'templates/mainTemplate/mainTemplate';
+import MainPageContent from 'components/molecules/mainPageContent/mainPageContent';
+import SpecialTextContainer from 'components/molecules/quoteText/quoteText';
 
 const MainView: FC = () => (
   <MainTemplate>
-    <ContentContainer />
+    <MainPageContent />
     <SpecialTextContainer />
   </MainTemplate>
 );

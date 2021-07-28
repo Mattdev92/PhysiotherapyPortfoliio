@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import Text from 'components/atoms/text/text';
 import { specialText } from 'helpers/helpers';
-import { SpecialTextWrapper } from './specialTextContainer.styles';
+import { QuoteTextWrapper } from './quoteText.styles';
 
-const SpecialTextContainer: FC = () => {
+const QuoteText: FC = () => {
   return (
-    <SpecialTextWrapper>
+    <QuoteTextWrapper>
       <Text
         content={specialText}
         fontWeight={'XS'}
@@ -13,8 +13,8 @@ const SpecialTextContainer: FC = () => {
         margin={10}
         specialFont
       />
-    </SpecialTextWrapper>
+    </QuoteTextWrapper>
   );
 };
 
-export default SpecialTextContainer;
+export default QuoteText;

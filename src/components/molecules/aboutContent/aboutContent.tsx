@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import Text from 'components/atoms/text/text';
 import { aboutContentData } from 'helpers/helpers';
-import { ContentWrapper } from './aboutMeContentContainer.styles';
 import PersonalImage from 'assets/personalImage/p.jpg';
-import { StyledImage } from './aboutMeContentContainer.styles';
+import { StyledImage } from './aboutContent.styles';
+import ContentTemplate from 'templates/contentTemplate/contentTemplate';
 
-const AboutMeContentContainer: FC = () => {
+const AboutContent: FC = () => {
   return (
-    <ContentWrapper>
+    <ContentTemplate>
       <StyledImage src={PersonalImage} />
       {aboutContentData.map((item, i) => (
         <Text
@@ -18,8 +18,8 @@ const AboutMeContentContainer: FC = () => {
           margin={10}
         />
       ))}
-    </ContentWrapper>
+    </ContentTemplate>
   );
 };
 
-export default AboutMeContentContainer;
+export default AboutContent;

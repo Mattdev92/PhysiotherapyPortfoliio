@@ -20,6 +20,7 @@ export interface StyleClosetTheme {
     L: number;
   };
   fontSize: {
+    XXS: string;
     XS: string;
     S: string;
     M: string;
@@ -48,6 +49,7 @@ export const theme: StyleClosetTheme = {
     L: 800,
   },
   fontSize: {
+    XXS: '0.7em',
     XS: '1em',
     S: '1.6em',
     M: '2em',

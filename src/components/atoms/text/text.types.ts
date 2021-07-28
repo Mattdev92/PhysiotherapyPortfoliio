@@ -5,4 +5,6 @@ export interface TextProps {
   specialFont?: boolean;
   margin: number;
   background?: boolean;
+  color?: string;
+  marginLeft?: number;
 }
