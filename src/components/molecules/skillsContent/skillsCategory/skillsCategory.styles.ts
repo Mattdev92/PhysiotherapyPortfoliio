@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 300px;
+  height: 200px;
   margin: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);

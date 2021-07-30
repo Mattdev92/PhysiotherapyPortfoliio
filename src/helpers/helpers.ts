@@ -41,6 +41,14 @@ export const pseudoCodeMain = ['<main>', '<main/>'];
 export const pseudoCodeNav = ['<nav>', '</nav>'];
 export const pseudoCodeUl = [`<ul class='`, '</ul>'];
 export const pseudoCodeSection = [`<section class='`, '</section>'];
-export const marginPseudoCode = [
-  5, 15, 25, 25, 25, 25, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 5,
+
+// Skills data
+export const frontendEssentialsSkills = ['HTML5', 'CSS3', 'JS', 'TypeScript'];
+export const reactSkills = [
+  'React',
+  'React-router',
+  'Formik',
+  'React-redux',
+  'Apoll',
+  'Axios',
 ];

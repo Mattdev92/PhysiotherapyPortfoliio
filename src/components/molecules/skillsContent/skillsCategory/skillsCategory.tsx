@@ -7,8 +7,9 @@ import {
 } from './skillsCategory.styles';
 import Text from 'components/atoms/text/text';
 import PseudoCode from '../pseudoCode/pseudoCode';
+import { SkillsProps } from './skillsContent.types';
 
-const SkillsCategory: FC = () => {
+const SkillsCategory: FC<SkillsProps> = ({ skill }) => {
   return (
     <Wrapper>
       <PseudoCode />
@@ -21,12 +22,13 @@ const SkillsCategory: FC = () => {
         />
       </TitleWrapper>
       <SkillsWrapper>
-        <TextWrapper>
-          <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'HTML5'} />{' '}
-        </TextWrapper>
-        <TextWrapper>
-          <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'JS'} />
-        </TextWrapper>
+        {skill.map((item) => {
+          return (
+            <TextWrapper>
+              <Text fontSize={'S'} fontWeight={'S'} margin={5} content={item} />{' '}
+            </TextWrapper>
+          );
+        })}
       </SkillsWrapper>
     </Wrapper>
   );
