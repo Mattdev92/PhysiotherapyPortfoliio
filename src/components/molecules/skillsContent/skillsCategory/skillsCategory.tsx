@@ -1,5 +1,10 @@
 import { FC } from 'react';
-import { SkillsCategoryWrapper, Wrapper } from './skillsCategory.styles';
+import {
+  TextWrapper,
+  Wrapper,
+  TitleWrapper,
+  SkillsWrapper,
+} from './skillsCategory.styles';
 import Text from 'components/atoms/text/text';
 import PseudoCode from '../pseudoCode/pseudoCode';
 
@@ -7,16 +12,22 @@ const SkillsCategory: FC = () => {
   return (
     <Wrapper>
       <PseudoCode />
-      <SkillsCategoryWrapper>
+      <TitleWrapper>
         <Text
           fontSize={'M'}
           fontWeight={'M'}
           margin={5}
           content={'FRONTEND ESSENTIALS'}
         />
-        <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'HTML5'} />
-        <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'JS'} />
-      </SkillsCategoryWrapper>
+      </TitleWrapper>
+      <SkillsWrapper>
+        <TextWrapper>
+          <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'HTML5'} />{' '}
+        </TextWrapper>
+        <TextWrapper>
+          <Text fontSize={'S'} fontWeight={'S'} margin={5} content={'JS'} />
+        </TextWrapper>
+      </SkillsWrapper>
     </Wrapper>
   );
 };

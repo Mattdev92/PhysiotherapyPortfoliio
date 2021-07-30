@@ -19,7 +19,7 @@ export const TextContainer = styled.span<TextProps>`
     width: auto;
     display: flex;
     font-size: ${({ specialFont, fontSize, theme }) =>
-      specialFont ? theme.fontSize['S'] : theme.fontSize[fontSize]};
+      specialFont ? theme.fontSize['XS'] : theme.fontSize[fontSize]};
     margin-left: 5px;
     margin-right: 5px;
     text-align: justify;

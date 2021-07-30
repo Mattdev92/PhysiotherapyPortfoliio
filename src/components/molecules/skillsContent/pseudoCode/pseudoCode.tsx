@@ -10,7 +10,7 @@ const PseudoCode: FC = () => {
           content={item}
           fontSize={'XXS'}
           fontWeight={'XS'}
-          margin={50}
+          margin={0}
           color={'blue'}
           marginLeft={5}
         />
