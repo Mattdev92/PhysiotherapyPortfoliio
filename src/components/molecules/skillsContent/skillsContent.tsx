@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import SkillsCategory from '../skillsCategory/skillsCategory';
+import SkillsCategory from './skillsCategory/skillsCategory';
 import { ContentWrapper } from './skillsContent.styles';
 
 const SkillsContent: FC = () => {

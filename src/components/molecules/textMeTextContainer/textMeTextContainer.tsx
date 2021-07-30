@@ -1,17 +1,20 @@
 import { FC } from 'react';
-import { TextWrapper } from './textMetextContainer.styles';
+import { Wrapper } from './textMetextContainer.styles';
 import Text from 'components/atoms/text/text';
+import { StyledImage } from './textMetextContainer.styles';
+import PersonalImage from 'assets/personalImage/p.jpg';
 
 const HelloTextContainer: FC = () => {
   return (
-    <TextWrapper>
+    <Wrapper>
       <Text
         content={'Napisz do mnie !'}
         fontSize={'M'}
         fontWeight={'M'}
         margin={0}
       />
-    </TextWrapper>
+      <StyledImage src={PersonalImage} />
+    </Wrapper>
   );
 };
 
