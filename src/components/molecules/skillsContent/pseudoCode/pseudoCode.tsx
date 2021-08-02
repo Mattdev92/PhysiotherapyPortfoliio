@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import Text from 'components/atoms/text/text';
-import { pseudoCodeMain } from 'helpers/helpers';
+import { pseudoCodeSection } from 'helpers/helpers';
 import { PseudoCodeWrapper } from './pseudoCode.styled';
 const PseudoCode: FC = () => {
   return (
     <PseudoCodeWrapper>
-      {pseudoCodeMain.map((item, i) => (
+      {pseudoCodeSection.map((item) => (
         <Text
           content={item}
           fontSize={'XXS'}

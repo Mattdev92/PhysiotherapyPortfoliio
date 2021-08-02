@@ -1,6 +1,9 @@
 import { FC } from 'react';
-import MainTemplate from 'templates/mainTemplate/mainTemplate';
+import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
+import { phoneNumber } from 'helpers/helpers';
 
-const ContactView: FC = () => <MainTemplate>Contact</MainTemplate>;
+const ContactView: FC = () => {
+  return <MainPageTemplate content={phoneNumber} />;
+};
 
 export default ContactView;
