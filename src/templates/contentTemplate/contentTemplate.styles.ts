@@ -9,4 +9,8 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  @media (max-width: 1000px) {
+    margin: 0px;
+  }
 `;

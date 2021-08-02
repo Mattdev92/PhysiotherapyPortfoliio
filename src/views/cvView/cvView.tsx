@@ -1,6 +1,9 @@
 import { FC } from 'react';
-import MainTemplate from 'templates/mainTemplate/mainTemplate';
+import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
+import { cv } from 'helpers/helpers';
 
-const CvView: FC = () => <MainTemplate>CV</MainTemplate>;
+const CvView: FC = () => {
+  return <MainPageTemplate content={cv} />;
+};
 
 export default CvView;
