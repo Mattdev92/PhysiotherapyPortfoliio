@@ -12,6 +12,7 @@ import AppContext from 'context';
 
 const Root: FC = () => {
   const [store, setStore] = useState({ mobileNav: false });
+
   return (
     <AppContext.Provider
       value={{
@@ -44,4 +45,5 @@ const Root: FC = () => {
     </AppContext.Provider>
   );
 };
+
 export default Root;

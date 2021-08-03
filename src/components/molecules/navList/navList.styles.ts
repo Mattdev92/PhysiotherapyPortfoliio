@@ -16,9 +16,13 @@ export const StyledLink = styled(NavLink)`
     &:before {
       content: '';
       position: absolute;
+      display: flex;
+      justify-content: center;
       top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
       height: 30px;
-      width: 100%;
+      width: 90%;
       border-bottom: 2px solid black;
     }
   }
@@ -26,11 +30,7 @@ export const StyledLink = styled(NavLink)`
     &.active {
       &:before {
         content: '';
-        position: absolute;
-        top: 20px;
-        height: 30px;
-        width: 100%;
-        border-bottom: 2px solid black;
+        border: none;
       }
     }
   }

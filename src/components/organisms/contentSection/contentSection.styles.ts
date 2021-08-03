@@ -7,7 +7,7 @@ export const ContentWrapper = styled.section`
   background: ${({ theme }) => theme.colors.content};
   grid-column: 3/13;
   grid-row: 1/4;
-  overflow: scroll;
+  overflow-y: scroll;
   @media (max-width: 580px) {
     height: 90vh;
     display: flex;
