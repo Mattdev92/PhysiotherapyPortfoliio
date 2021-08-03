@@ -10,4 +10,5 @@ const SvgIcon: FC<SvgIconProps> = (props) => {
     </SvgContainer>
   );
 };
+
 export default SvgIcon;

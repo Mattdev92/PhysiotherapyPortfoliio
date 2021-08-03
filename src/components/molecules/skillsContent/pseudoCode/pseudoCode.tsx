@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Text from 'components/atoms/text/text';
 import { pseudoCodeSection } from 'helpers/helpers';
 import { PseudoCodeWrapper } from './pseudoCode.styled';
+
 const PseudoCode: FC = () => {
   return (
     <PseudoCodeWrapper>
@@ -18,4 +19,5 @@ const PseudoCode: FC = () => {
     </PseudoCodeWrapper>
   );
 };
+
 export default PseudoCode;

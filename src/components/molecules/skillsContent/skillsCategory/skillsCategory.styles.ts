@@ -14,6 +14,7 @@ export const TextWrapper = styled.span`
   justify-content: center;
   max-width: 150px;
 `;
+
 export const SkillsWrapper = styled.div`
   width: 100%;
   margin: 0 20px;
@@ -25,6 +26,7 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
 `;
+
 export const TitleWrapper = styled.span`
   grid-column: 2/6;
   grid-row: 1/2;
