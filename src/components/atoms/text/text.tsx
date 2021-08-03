@@ -4,7 +4,11 @@ import { TextContainer } from './text.styles';
 
 const Text: FC<TextProps> = (props) => {
   const { content } = props;
-  return <TextContainer {...props}>{content}</TextContainer>;
+  return (
+    <TextContainer ref={props.refText} {...props}>
+      {content}
+    </TextContainer>
+  );
 };
 
 export default Text;

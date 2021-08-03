@@ -12,7 +12,7 @@ import SvgIcon from 'components/atoms/svgIcon/svgIcon';
 import { techIcons } from 'helpers/helpers';
 import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
 
-const SkillsCategory: FC<SkillsProps> = ({ skill, category }) => {
+const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
   const [actualScreenWidth, setActualScreenWidth] = useState(window.innerWidth);
   const getWidth = () =>
     window.innerWidth ||
@@ -20,20 +20,16 @@ const SkillsCategory: FC<SkillsProps> = ({ skill, category }) => {
     document.body.clientWidth;
   useEffect(() => {
     const resizeListener = () => {
-      // change width from the state object
       setActualScreenWidth(getWidth());
     };
-    // set resize listener
     window.addEventListener('resize', resizeListener);
-
-    // clean up function
     return () => {
-      // remove resize listener
       window.removeEventListener('resize', resizeListener);
     };
   }, []);
+
   return (
-    <Wrapper>
+    <Wrapper ref={refSkill}>
       <PseudoCode />
       <TitleWrapper>
         <Text
@@ -66,4 +62,5 @@ const SkillsCategory: FC<SkillsProps> = ({ skill, category }) => {
     </Wrapper>
   );
 };
+
 export default SkillsCategory;

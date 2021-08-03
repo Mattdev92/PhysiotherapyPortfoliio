@@ -1,12 +1,12 @@
 import { FC } from 'react';
-import AboutMeContentContainer from 'components/molecules/aboutContent/aboutContent';
+import AboutContent from 'components/molecules/aboutContent/aboutContent';
 import MainTemplate from 'templates/mainTemplate/mainTemplate';
-import HelloTextContainer from 'components/molecules/textMeTextContainer/textMeTextContainer';
+import HelloTextContainer from 'components/molecules/textMe/textMe';
 
 const AboutView: FC = () => {
   return (
     <MainTemplate>
-      <AboutMeContentContainer />
+      <AboutContent />
       <HelloTextContainer />
     </MainTemplate>
   );

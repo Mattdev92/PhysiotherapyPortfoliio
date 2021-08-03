@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface TextProps {
   content: string;
   fontWeight: string;
@@ -7,4 +9,5 @@ export interface TextProps {
   background?: boolean;
   color?: string;
   marginLeft?: number;
+  refText?: React.RefObject<any>;
 }

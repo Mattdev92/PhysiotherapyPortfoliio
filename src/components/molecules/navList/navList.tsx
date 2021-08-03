@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import Text from 'components/atoms/text/text';
 import { Navdata, Url } from 'helpers/helpers';
 import { ListWrapper } from './navList.styles';
@@ -7,7 +7,7 @@ import { StyledLink } from './navList.styles';
 const NavList: FC = () => {
   return (
     <ListWrapper>
-      {Navdata.map((item, i) => (
+      {Navdata.map((item, i: number) => (
         <StyledLink to={Url[i]} key={i}>
           <Text
             content={item}

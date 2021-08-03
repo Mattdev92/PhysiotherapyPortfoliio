@@ -3,6 +3,7 @@ export interface SvgIconProps {
   width?: number;
   height?: number;
 }
+
 export interface IconProps {
   width?: number;
   height?: number;
