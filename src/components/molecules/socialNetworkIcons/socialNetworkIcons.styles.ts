@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   grid-row: 1 / 2;
   align-self: start;
   height: 80px;
-  @media (max-width: 1400px) {
+  @media (max-width: 1800px) {
     grid-column: 8 / 10;
   }
   @media (max-width: 1150px) {

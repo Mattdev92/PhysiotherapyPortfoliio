@@ -14,7 +14,7 @@ html{
     margin:0 140px;
     padding:0;
     background: rgb(251,251,251);
-    @media(max-width:1400px){
+    @media(max-width:1850px){
       margin:0;
     }
   }
