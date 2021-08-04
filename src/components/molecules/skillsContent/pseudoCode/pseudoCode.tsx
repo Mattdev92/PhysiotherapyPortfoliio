@@ -14,6 +14,7 @@ const PseudoCode: FC = () => {
           margin={0}
           color={'blue'}
           marginLeft={5}
+          key={item}
         />
       ))}
     </PseudoCodeWrapper>

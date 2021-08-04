@@ -15,6 +15,8 @@ export const TextContainer = styled.span<TextProps>`
     background ? theme.colors.main : 'none'};
   border: none;
   color: ${({ color = 'black' }) => color};
+  border-radius: 5px;
+  padding: 5px;
   @media (max-width: 580px) {
     width: auto;
     display: flex;

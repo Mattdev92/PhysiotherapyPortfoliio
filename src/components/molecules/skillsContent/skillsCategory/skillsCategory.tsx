@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useContext } from 'react';
 import {
   TextWrapper,
   Wrapper,
@@ -11,29 +11,21 @@ import { SkillsProps } from './skillsCategory.types';
 import SvgIcon from 'components/atoms/svgIcon/svgIcon';
 import { techIcons } from 'helpers/helpers';
 import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
+import AppContext from 'context';
 
 const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
-  const [actualScreenWidth, setActualScreenWidth] = useState(window.innerWidth);
-  const getWidth = () =>
-    window.innerWidth ||
-    document.documentElement.clientWidth ||
-    document.body.clientWidth;
-  useEffect(() => {
-    const resizeListener = () => {
-      setActualScreenWidth(getWidth());
-    };
-    window.addEventListener('resize', resizeListener);
-    return () => {
-      window.removeEventListener('resize', resizeListener);
-    };
-  }, []);
+  const {
+    store: { actualScreenWidth },
+  } = useContext(AppContext);
 
   return (
     <Wrapper ref={refSkill}>
       <PseudoCode />
       <TitleWrapper>
         <Text
-          fontSize={actualScreenWidth < 700 ? 'XS' : 'S'}
+          fontSize={
+            actualScreenWidth < 700 || window.innerWidth < 700 ? 'XS' : 'S'
+          }
           fontWeight={'M'}
           margin={5}
           content={category}
@@ -42,10 +34,12 @@ const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
       <SkillsWrapper>
         {skill.map((item, i) => {
           return (
-            <TextWrapper>
+            <TextWrapper key={item}>
               <Text
                 fontSize={'XS'}
-                fontWeight={actualScreenWidth < 700 ? 'S' : 'M'}
+                fontWeight={
+                  actualScreenWidth < 700 || window.innerWidth < 700 ? 'S' : 'M'
+                }
                 margin={5}
                 content={item}
               />{' '}
