@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { NavigationWrapperProps } from './navigation.types';
 
 export const NavWrapper = styled.nav<NavigationWrapperProps>`
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: center;

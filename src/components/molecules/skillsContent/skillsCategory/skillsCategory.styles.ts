@@ -25,6 +25,10 @@ export const SkillsWrapper = styled.div`
   @media (max-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
   }
+  @media (max-width: 580px) {
+    grid-column: 1/6;
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 export const TitleWrapper = styled.span`

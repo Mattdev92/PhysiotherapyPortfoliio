@@ -1,26 +1,32 @@
 import styled from 'styled-components';
+import { WrapperProps } from './socialNetworkIcons.types';
 
-export const Wrapper = styled.div`
-  top: 20px;
+export const Wrapper = styled.div<WrapperProps>`
+  top: 0;
   position: sticky;
-  margin: 20px;
+  padding: 20px 0;
   grid-column: 9 / 11;
   grid-row: 1 / 2;
   align-self: start;
   height: 80px;
+  background: ${({ scrollBackground, theme }) =>
+    scrollBackground === true ? theme.colors.main : 'none'};
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
   @media (max-width: 1800px) {
-    grid-column: 8 / 10;
+    grid-column: 8 / 11;
   }
   @media (max-width: 1150px) {
-    grid-column: 6 / 8;
+    grid-column: 6 / 11;
   }
   @media (max-width: 780px) {
-    grid-column: 4 / 6;
+    grid-column: 4 / 11;
   }
   @media (max-width: 580px) {
-    margin: 20px 0;
+    margin: 0;
+    top: 0;
     width: 100%;
-    height: 80px;
   }
 `;
 
