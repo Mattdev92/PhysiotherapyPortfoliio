@@ -7,24 +7,18 @@ export const Wrapper = styled.div`
   justify-content: center;
   grid-column: 5/10;
   grid-row: 3/4;
-  color: ${({ theme }) => theme.colors.main};
+  border: none;
+  color: white;
+  padding: 15px 16px;
+  text-align: center;
+  text-decoration: none;
   align-self: center;
+  cursor: pointer;
+  background: #4caf50;
   border-radius: 5px;
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-`;
-
-export const StyledImage = styled.img`
-  margin-bottom: 20px;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  @media (max-width: 1450px) {
-    margin-bottom: 0;
-    height: 200px;
-    width: 200px;
-  } ;
 `;

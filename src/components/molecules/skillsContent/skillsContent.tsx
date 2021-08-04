@@ -17,7 +17,7 @@ const SkillsContent: FC = () => {
         x: -50,
         y: 10,
         ease: Power0.easeOut,
-        duration: 0.2,
+        duration: 0.1,
         delay: 0.3,
       })
     );

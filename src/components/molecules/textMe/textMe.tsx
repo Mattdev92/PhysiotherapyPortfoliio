@@ -28,6 +28,7 @@ const HelloTextContainer: FC = () => {
         fontSize={'M'}
         fontWeight={'M'}
         margin={0}
+        background
       />
       <StyledImage src={PersonalImage} />
     </Wrapper>

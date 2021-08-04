@@ -9,6 +9,7 @@ export const ContentWrapper = styled.section`
   grid-row: 1/4;
   overflow-y: scroll;
   @media (max-width: 580px) {
+    margin: 15px;
     height: 90vh;
     display: flex;
     align-items: center;

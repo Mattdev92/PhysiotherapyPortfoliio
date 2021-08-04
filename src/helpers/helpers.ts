@@ -16,7 +16,7 @@ export const developer = [
 
 export const cv = [
   'CZEŚĆ, tu MATI',
-  'CV',
+  'Pobierz CV',
   'Front End Developer / React enthusiast',
 ];
 
