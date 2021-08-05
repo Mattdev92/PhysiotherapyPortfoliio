@@ -19,6 +19,8 @@ const EmailComponent: FC<EmailProps> = ({ refEmail }) => {
         }
         margin={0}
         color={'white'}
+        pointer={true}
+        click={() => window.open('mailto:mateusz.grzejszczyk1@gmail.com')}
       />
     </Wrapper>
   );

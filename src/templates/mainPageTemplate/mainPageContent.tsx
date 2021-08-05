@@ -12,7 +12,11 @@ import gsap from 'gsap';
 import { Power0 } from 'gsap';
 import EmailComponent from 'components/molecules/emailComponent/emailComponent';
 
-const MainPageTemplate: FC<MainPageTemplateProps> = ({ content, mail }) => {
+const MainPageTemplate: FC<MainPageTemplateProps> = ({
+  content,
+  mail,
+  pointer,
+}) => {
   const refContent = useRef(null);
   const refSpecialText = useRef(null);
   useEffect(() => {
@@ -37,6 +41,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({ content, mail }) => {
       <ContentTemplate refContent={refContent}>
         {content.map((item, i) => (
           <Text
+            pointer={pointer}
             content={item}
             key={item}
             fontWeight={mainContentDataFontWight[i]}
@@ -49,6 +54,11 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({ content, mail }) => {
                 ? true
                 : false
             }
+            click={() => {
+              if (item === 'Pobierz CV') {
+                window.open('resume/cv.pdf', '_black');
+              }
+            }}
           />
         ))}
       </ContentTemplate>
