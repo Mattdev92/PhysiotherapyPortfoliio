@@ -15,6 +15,7 @@ const NavList: FC = () => {
             fontSize={'S'}
             fontWeight={'S'}
             margin={17}
+            pointer={true}
           />
         </StyledLink>
       ))}

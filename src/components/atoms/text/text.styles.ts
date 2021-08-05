@@ -17,6 +17,7 @@ export const TextContainer = styled.span<TextProps>`
   color: ${({ color = 'black' }) => color};
   border-radius: 5px;
   padding: 5px;
+  cursor: ${({ pointer = false }) => (pointer ? 'pointer' : 'default')};
   @media (max-width: 580px) {
     width: auto;
     display: flex;

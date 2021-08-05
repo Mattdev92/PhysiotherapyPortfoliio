@@ -3,7 +3,7 @@ import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
 import { cv } from 'helpers/helpers';
 
 const CvView: FC = () => {
-  return <MainPageTemplate content={cv} />;
+  return <MainPageTemplate content={cv} pointer />;
 };
 
 export default CvView;

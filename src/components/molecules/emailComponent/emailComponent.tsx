@@ -19,6 +19,7 @@ const EmailComponent: FC<EmailProps> = ({ refEmail }) => {
         }
         margin={0}
         color={'white'}
+        pointer={true}
       />
     </Wrapper>
   );
