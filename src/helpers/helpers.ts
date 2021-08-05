@@ -14,11 +14,7 @@ export const developer = [
   'Front End Developer / React enthusiast',
 ];
 
-export const cv = [
-  'CZEŚĆ, tu MATI',
-  'Pobierz CV',
-  'Front End Developer / React enthusiast',
-];
+export const cv = ['Pobierz CV'];
 
 export const phoneNumber = [
   'CZEŚĆ, tu MATI',
@@ -83,7 +79,7 @@ export const reactSkills = [
   'React router',
   'React Redux',
   'React Hooks',
-  'Jest & Raect testing library',
+  'Jest & React testing library',
   'Redux',
   'Redux Toolkit',
   'Redux Thunk',
@@ -97,6 +93,7 @@ export const reactSkills = [
   'GraphQL',
   'LocaStorage',
   'Json server',
+  'Formik',
 ];
 
 export const mobileDevelopment = [
@@ -105,7 +102,13 @@ export const mobileDevelopment = [
   'React ReduxNative Debugger',
 ];
 
-export const backendFrameworks = ['Express', 'Bcrypt', 'JWT', 'Nodemon'];
+export const backendFrameworks = [
+  'Express',
+  'Bcrypt',
+  'JWT',
+  'Nodemon',
+  'Mongoose',
+];
 
 export const platformsSkills = ['DatoCMS', 'MongoDB', 'Netlify'];
 

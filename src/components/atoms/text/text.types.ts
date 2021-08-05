@@ -10,4 +10,6 @@ export interface TextProps {
   color?: string;
   marginLeft?: number;
   refText?: React.RefObject<any>;
+  click?: () => void;
+  pointer?: boolean;
 }
