@@ -8,4 +8,5 @@ export const PseudoCodeWrapper = styled.section`
   grid-row: 1/5;
   height: 100%;
   justify-content: space-between;
+  font-size: 13px;
 `;

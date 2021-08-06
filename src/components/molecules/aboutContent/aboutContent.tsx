@@ -14,8 +14,8 @@ const AboutContent: FC = () => {
     aboutContentData.map((_: any, i: number) =>
       aboutTimeline.from(refTextTab.current[i].current, {
         opacity: 0,
-        x: -200,
-        y: 100,
+        x: 0,
+        y: 10,
         ease: Power0.easeOut,
         duration: 0.3,
         delay: 0.3,

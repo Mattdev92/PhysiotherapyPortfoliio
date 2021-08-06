@@ -16,6 +16,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
   content,
   mail,
   pointer,
+  children,
 }) => {
   const refContent = useRef(null);
   const refSpecialText = useRef(null);
@@ -39,6 +40,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
   return (
     <MainTemplate>
       <ContentTemplate refContent={refContent}>
+        {children}
         {content.map((item, i) => (
           <Text
             pointer={pointer}
