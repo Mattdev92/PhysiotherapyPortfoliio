@@ -6,6 +6,13 @@ import { ReactComponent as JsIcon } from 'assets/techIcons/js.svg';
 import { ReactComponent as CssIcon } from 'assets/techIcons/css.svg';
 import { ReactComponent as TypescriptIcon } from 'assets/techIcons/typescript.svg';
 import { ReactComponent as SassIcon } from 'assets/techIcons/sass.svg';
+import ItSpa from 'assets/projects/ItSpa.png';
+import MemoryGame from 'assets/projects/MemoryGame.png';
+import nativeMems from 'assets/projects/nativeMems.png';
+import OrgenizerApp from 'assets/projects/OrganizerApp.png';
+import Portfolio from 'assets/projects/Portfolio.png';
+import ShopProject from 'assets/projects/ShopProject.png';
+import WeatherApp from 'assets/projects/WeatherApp.png';
 
 // Content Data for Main Page template
 export const developer = [
@@ -23,8 +30,8 @@ export const phoneNumber = [
 ];
 
 // Navigation data
-export const Navdata = ['O MNIE', 'UMIEJĘTNOŚCI', 'KONTAKT', 'CV'];
-export const Url = ['/about', '/skills', '/contact', '/CV'];
+export const Navdata = ['O MNIE', 'PROJEKTY', 'UMIEJĘTNOŚCI', 'KONTAKT', 'CV'];
+export const Url = ['/about', '/projects', '/skills', '/contact', '/CV'];
 
 // Social Network data
 export const SocialNetworkIcon = [Face, Github, Linkedin];
@@ -131,4 +138,25 @@ export const skills = [
   backendFrameworks,
   platformsSkills,
   toolsSkills,
+];
+
+// Projects Data
+
+export const ProjectMiniatures = [
+  Portfolio,
+  nativeMems,
+  OrgenizerApp,
+  ShopProject,
+  MemoryGame,
+  ItSpa,
+  WeatherApp,
+];
+
+export const ProjectsUrl = [
+  'https://github.com/Mattdev92/MatDevPortfolio',
+  'https://github.com/Mattdev92/NativeMems',
+  'https://github.com/Mattdev92/Fullstack_organizer_app',
+  'https://github.com/Mattdev92/Shop-project',
+  'https://github.com/Mattdev92/Memory_game',
+  'https://github.com/Mattdev92/IT_SPA_PROJECT_1',
 ];
