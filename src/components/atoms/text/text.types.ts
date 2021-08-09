@@ -12,4 +12,5 @@ export interface TextProps {
   refText?: React.RefObject<any>;
   click?: () => void;
   pointer?: boolean;
+  center?: boolean;
 }

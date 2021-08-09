@@ -16,8 +16,9 @@ export const TextContainer = styled.span<TextProps>`
   border: none;
   color: ${({ color = 'black' }) => color};
   border-radius: 5px;
-  padding: 5px;
+  padding: 4px;
   cursor: ${({ pointer = false }) => (pointer ? 'pointer' : 'default')};
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
   @media (max-width: 580px) {
     width: auto;
     display: flex;

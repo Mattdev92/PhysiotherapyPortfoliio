@@ -7,7 +7,7 @@ export const ContentWrapper = styled.div`
   grid-column: 3 / 8;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background: ${({ theme }) => theme.colors.content};

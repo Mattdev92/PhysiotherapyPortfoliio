@@ -14,7 +14,7 @@ const HelloTextContainer: FC = () => {
       })
       .from(refText.current, {
         opacity: 0,
-        x: -100,
+        y: -10,
         duration: 1,
         delay: 1.9,
       });
@@ -30,6 +30,7 @@ const HelloTextContainer: FC = () => {
         margin={0}
         background
         pointer={true}
+        center
       />
       <StyledImage src={PersonalImage} />
     </Wrapper>
