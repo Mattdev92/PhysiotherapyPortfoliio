@@ -14,10 +14,10 @@ const SkillsContent: FC = () => {
     skills.map((_: any, i: number) =>
       skillsTimeline.from(refTab.current[i].current, {
         opacity: 0,
-        x: -50,
+        x: 0,
         y: 10,
         ease: Power0.easeOut,
-        duration: 0.1,
+        duration: 0.2,
         delay: 0.3,
       })
     );

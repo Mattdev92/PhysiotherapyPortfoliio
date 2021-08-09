@@ -13,6 +13,7 @@ export const TextWrapper = styled.span`
   flex-direction: column;
   justify-content: center;
   max-width: 150px;
+  align-items: center;
 `;
 
 export const SkillsWrapper = styled.div`
@@ -26,7 +27,7 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   @media (max-width: 580px) {
-    grid-column: 1/6;
+    grid-column: 2/6;
     grid-template-columns: repeat(2, 1fr);
   }
 `;

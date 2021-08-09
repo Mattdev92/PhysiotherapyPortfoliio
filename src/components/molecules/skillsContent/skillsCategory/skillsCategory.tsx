@@ -36,6 +36,7 @@ const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
           return (
             <TextWrapper key={item}>
               <Text
+                center
                 fontSize={'XS'}
                 fontWeight={
                   actualScreenWidth < 700 || window.innerWidth < 700 ? 'S' : 'M'
