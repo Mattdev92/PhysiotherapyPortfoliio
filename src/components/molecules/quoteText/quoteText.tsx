@@ -13,6 +13,7 @@ const QuoteText: FC<quoteProps> = ({ refSpcialText }) => {
         fontSize={'XS'}
         margin={10}
         specialFont
+        center
       />
     </QuoteTextWrapper>
   );

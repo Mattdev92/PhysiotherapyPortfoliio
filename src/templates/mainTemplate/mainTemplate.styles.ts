@@ -19,5 +19,6 @@ export const MainWrapper = styled.main`
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    flex-direction: column-reverse;
   }
 `;

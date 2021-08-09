@@ -34,6 +34,7 @@ const AboutContent: FC = () => {
           fontWeight={'XM'}
           fontSize={'XS'}
           margin={10}
+          center={item === '500 239 053' ? true : false}
         />
       ))}
     </ContentTemplate>

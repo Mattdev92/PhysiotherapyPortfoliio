@@ -30,6 +30,7 @@ const HelloTextContainer: FC = () => {
         margin={0}
         background
         pointer={true}
+        center
       />
       <StyledImage src={PersonalImage} />
     </Wrapper>
