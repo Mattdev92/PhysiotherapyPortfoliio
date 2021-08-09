@@ -9,4 +9,7 @@ export const PseudoCodeWrapper = styled.section`
   height: 100%;
   justify-content: space-between;
   font-size: 13px;
+  @media (max-width: 580px) {
+    display: none;
+  }
 `;
