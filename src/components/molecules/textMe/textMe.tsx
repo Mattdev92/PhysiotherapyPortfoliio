@@ -31,6 +31,7 @@ const HelloTextContainer: FC = () => {
         background
         pointer={true}
         center
+        click={() => window.open('mailto:mateusz.grzejszczyk1@gmail.com')}
       />
       <StyledImage src={PersonalImage} />
     </Wrapper>

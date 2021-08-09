@@ -56,6 +56,13 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
                 ? true
                 : false
             }
+            center={
+              item === 'WEB DEVELOPER' ||
+              item === 'Pobierz CV' ||
+              item === '500 239 053'
+                ? true
+                : false
+            }
             click={() => {
               if (item === 'Pobierz CV') {
                 window.open('resume/cv.pdf', '_black');
