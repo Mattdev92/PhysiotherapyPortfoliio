@@ -27,8 +27,9 @@ export const SkillsWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
   }
   @media (max-width: 580px) {
-    grid-column: 2/6;
+    grid-column: 1/6;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0;
   }
 `;
 
@@ -43,5 +44,8 @@ export const TitleWrapper = styled.span`
   @media (max-width: 700px) {
     justify-content: left;
     align-items: left;
+  }
+  @media (max-width: 580px) {
+    grid-column: 1/6;
   }
 `;
