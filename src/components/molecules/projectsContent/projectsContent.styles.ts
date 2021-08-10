@@ -9,11 +9,8 @@ export const ContentWrapper = styled.div`
   grid-auto-rows: auto;
   gap: 10px;
   justify-content: center;
-`;
-export const Project = styled.div`
-  height: 300px;
-  width: 300px;
-  background: blue;
-  cursor: pointer;
-  margin: 10px;
+  @media (max-width: 580px) {
+    grid-column: 1 / 11;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 `;

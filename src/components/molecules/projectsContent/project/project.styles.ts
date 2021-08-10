@@ -10,10 +10,18 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   position: reletive;
   cursor: pointer;
+  @media (max-width: 580px) {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+  }
 `;
 export const StyledProject = styled.img`
   height: auto;
   width: 400px;
+  @media (max-width: 580px) {
+    width: 300px;
+  }
 `;
 
 export const CoverWrapper = styled.div`
@@ -27,6 +35,9 @@ export const CoverWrapper = styled.div`
   &:hover {
     opacity: 0;
     transition: height 0.5s ease-out;
+  }
+  @media (max-width: 580px) {
+    display: none;
   }
 `;
 
