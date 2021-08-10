@@ -160,3 +160,13 @@ export const ProjectsUrl = [
   'https://github.com/Mattdev92/Memory_game',
   'https://github.com/Mattdev92/IT_SPA_PROJECT_1',
 ];
+
+export const ProjectDescription = [
+  'I have created my Portfolio to present my projects. Tech stack: React, Typescript, React Router, React hooks, Context, Styled Components',
+  'Project created to practise React in connection with React Native. Tech stack: React, React Native, Typescript, React Router, React hooks, Redux Toolkit, Styled Components, GraphQl, DatoCMS ',
+  'Fullstack project based on Express and React. Tech stack: React, Express, Typescript, React Router, React Bootstrap',
+  'E-commerce website simulated real shop with shopping cart, order list etc. Tech stack: React with class components, Redux, Gsap, React Router',
+  'Memory game.Game is based on tradition rule to match pair of identical cards. Tech stack: React, Redux, Bulma, SCSS',
+  `About
+  It's the first diploma project which I will prepare for my postgraduate studies "frontend with React". This project was prepared using vanilla js without any js framework. tECH STACK: Vanilla js, SCSS, Json server, axios, uuid, prettier, eslint`,
+];

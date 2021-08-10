@@ -7,16 +7,18 @@ import {
 } from './project.styles';
 import { ProjectProps } from './project.types';
 
-const Project: FC<ProjectProps> = ({ refProject, image }) => {
+const Project: FC<ProjectProps> = ({ refProject, image, content, link }) => {
   const [showDescription, setShowDescription] = useState(false);
   return (
-    <ProjectWrapper ref={refProject}>
+    <ProjectWrapper
+      ref={refProject}
+      onMouseLeave={() => setShowDescription(false)}
+    >
       <StyledProject src={image} />
-      <CoverWrapper
-        onMouseOver={() => setShowDescription(true)}
-        onMouseLeave={() => setShowDescription(false)}
-      />
-      <Description show={showDescription} />
+      <CoverWrapper onMouseOver={() => setShowDescription(true)} />
+      <Description show={showDescription} href={link}>
+        {showDescription && content}
+      </Description>
     </ProjectWrapper>
   );
 };

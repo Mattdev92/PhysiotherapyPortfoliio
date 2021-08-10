@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { DescriptionProps } from './project.types';
 
 export const ProjectWrapper = styled.div`
+  text-decoration: none;
   height: 400px;
   width: 400px;
   display: flex;
@@ -22,14 +23,16 @@ export const CoverWrapper = styled.div`
   top: 0;
   height: 400px;
   width: 400px;
-  opacity: 50%;
+  opacity: 20%;
   &:hover {
     opacity: 0;
     transition: height 0.5s ease-out;
   }
 `;
 
-export const Description = styled.div<DescriptionProps>`
+export const Description = styled.a<DescriptionProps>`
+  text-decoration: none;
+  color: black;
   background: white;
   z-index: 2;
   position: absolute;

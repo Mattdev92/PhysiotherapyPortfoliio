@@ -3,7 +3,11 @@ import { ContentWrapper } from './projectsContent.styles';
 import gsap from 'gsap';
 import { Power0 } from 'gsap/all';
 import Project from './project/project';
-import { ProjectMiniatures, ProjectsUrl } from 'helpers/helpers';
+import {
+  ProjectMiniatures,
+  ProjectsUrl,
+  ProjectDescription,
+} from 'helpers/helpers';
 
 const ProjectsContent: FC = () => {
   const refTab = useRef<React.RefObject<any>[]>(
@@ -27,7 +31,13 @@ const ProjectsContent: FC = () => {
   return (
     <ContentWrapper>
       {ProjectMiniatures.map((item, i) => (
-        <Project refProject={refTab.current[i]} key={item} image={item} />
+        <Project
+          refProject={refTab.current[i]}
+          key={item}
+          image={item}
+          content={ProjectDescription[i]}
+          link={ProjectsUrl[i]}
+        />
       ))}
     </ContentWrapper>
   );
