@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { DescriptionProps } from './project.types';
 
 export const ProjectWrapper = styled.div`
   height: 400px;
@@ -26,4 +27,14 @@ export const CoverWrapper = styled.div`
     opacity: 0;
     transition: height 0.5s ease-out;
   }
+`;
+
+export const Description = styled.div<DescriptionProps>`
+  background: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  height: ${({ show }) => (show ? '150px' : 0)};
+  width: 400px;
+  transition: height 1s ease-in-out;
 `;
