@@ -10,11 +10,18 @@ import { Back } from 'gsap/all';
 
 const Nav: FC = () => {
   const refLogo = useRef(null);
+  const refNav = useRef(null);
   useEffect(() => {
     const t1 = gsap.timeline({ repeat: 0, repeatDelay: 1 });
     t1.from(refLogo.current, {
       opacity: 0,
       rotation: -180,
+      ease: Back.easeOut,
+      duration: 1,
+    });
+    t1.from(refNav.current, {
+      scaleX: 0.7,
+      rotateX: 90,
       ease: Back.easeOut,
       duration: 1,
     });
@@ -37,7 +44,7 @@ const Nav: FC = () => {
       <StyledIcon ref={refLogo} to="/">
         <SvgIcon Icon={LogoIcon} height={80} width={110} />
       </StyledIcon>
-      <NavList />
+      <NavList refNav={refNav} />
     </NavWrapper>
   );
 };

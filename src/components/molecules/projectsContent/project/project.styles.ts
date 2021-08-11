@@ -37,18 +37,32 @@ export const CoverWrapper = styled.div`
     transition: height 0.5s ease-out;
   }
   @media (max-width: 580px) {
-    display: none;
+    height: 300px;
+    width: 300px;
   }
 `;
 
 export const Description = styled.a<DescriptionProps>`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
   text-decoration: none;
+  padding: 10px;
+  font-size: ${({ theme }) => theme.fontSize.XS};
+  opacity: ${({ show }) => (show ? '100%' : 0)};
+  font-family: ${({ theme }) => theme.fontFamily.mainFont};
   color: black;
-  background: white;
+  background: ${({ theme }) => theme.colors.content};
   z-index: 2;
   position: absolute;
   bottom: 0;
-  height: ${({ show }) => (show ? '150px' : 0)};
+  height: ${({ show }) => (show ? '250px' : 0)};
   width: 400px;
-  transition: height 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  @media (max-width: 580px) {
+    height: 300px;
+    width: 300px;
+    font-size: ${({ theme }) => theme.fontSize.XS};
+  }
 `;

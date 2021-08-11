@@ -14,7 +14,7 @@ export const Wrapper = styled.div`
   text-decoration: none;
   align-self: center;
   cursor: pointer;
-  background: #4caf50;
+  background: ${({ theme }) => theme.colors.helper};
   border-radius: 5px;
   @media (max-width: 1000px) {
     flex-direction: column-reverse;

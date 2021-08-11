@@ -6,6 +6,8 @@ import { ReactComponent as JsIcon } from 'assets/techIcons/js.svg';
 import { ReactComponent as CssIcon } from 'assets/techIcons/css.svg';
 import { ReactComponent as TypescriptIcon } from 'assets/techIcons/typescript.svg';
 import { ReactComponent as SassIcon } from 'assets/techIcons/sass.svg';
+import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
+
 import ItSpa from 'assets/projects/ItSpa.png';
 import MemoryGame from 'assets/projects/MemoryGame.png';
 import nativeMems from 'assets/projects/nativeMems.png';
@@ -63,10 +65,10 @@ export const pseudoCodeSection = [`<section class=`, '</section>'];
 // Skills data
 export const skillsCategories = [
   `'FRONTEND ESSENTIALS'>`,
-  `'FRONTEND FRAMEWORKS AND LIBRARIES'>`,
+  `'FRONTEND LIBRARIES'>`,
   `'MOBILE DEVELOPMENT'>`,
   `'BACKEND LANGUAGES'>`,
-  `'BACKEND FRAMEWORKS and LIBRARIES'>`,
+  `'BACKEND LIBRARIES'>`,
   `'CMS & DATABASE & external platforms'>`,
   `'TOOLS'>`,
 ];
@@ -76,13 +78,13 @@ export const frontendEssentialsSkills = [
   'CSS3',
   'JS',
   'TypeScript',
+  'React',
   'Sass',
 ];
 
 export const backendsSkills = ['NODE JS', 'C++'];
 
 export const reactSkills = [
-  'React',
   'React router',
   'React Redux',
   'React Hooks',
@@ -128,7 +130,14 @@ export const toolsSkills = [
   'AdobeXD',
 ];
 
-export const techIcons = [HtmlIcon, JsIcon, CssIcon, TypescriptIcon, SassIcon];
+export const techIcons = [
+  HtmlIcon,
+  CssIcon,
+  JsIcon,
+  TypescriptIcon,
+  ReactIcon,
+  SassIcon,
+];
 
 export const skills = [
   frontendEssentialsSkills,
@@ -159,14 +168,24 @@ export const ProjectsUrl = [
   'https://github.com/Mattdev92/Shop-project',
   'https://github.com/Mattdev92/Memory_game',
   'https://github.com/Mattdev92/IT_SPA_PROJECT_1',
+  'https://github.com/Mattdev92/Weather-app',
+];
+export const ProjectTitles = [
+  'Developer Portfolio',
+  'Mem native App',
+  'Organizer',
+  'Ecommerce',
+  'Memory Game',
+  'It SPA',
+  'Check city weather',
 ];
 
 export const ProjectDescription = [
-  'I have created my Portfolio to present my projects. Tech stack: React, Typescript, React Router, React hooks, Context, Styled Components',
-  'Project created to practise React in connection with React Native. Tech stack: React, React Native, Typescript, React Router, React hooks, Redux Toolkit, Styled Components, GraphQl, DatoCMS ',
-  'Fullstack project based on Express and React. Tech stack: React, Express, Typescript, React Router, React Bootstrap',
-  'E-commerce website simulated real shop with shopping cart, order list etc. Tech stack: React with class components, Redux, Gsap, React Router',
-  'Memory game.Game is based on tradition rule to match pair of identical cards. Tech stack: React, Redux, Bulma, SCSS',
-  `About
-  It's the first diploma project which I will prepare for my postgraduate studies "frontend with React". This project was prepared using vanilla js without any js framework. tECH STACK: Vanilla js, SCSS, Json server, axios, uuid, prettier, eslint`,
+  'My Developer Portfolio presenting skills, projects and a little about me. Tech stack: React, Typescript, React Router, React hooks, Context, Styled Components',
+  'Native app with funny Mems. Mems are downloaded form DatoCMS and present on mobile App. You can upvote or downvote each Mem to categorize them. Tech stack: React, React Native, Typescript, React Router, React hooks, Redux Toolkit, Styled Components, GraphQl, DatoCMS',
+  'Fullstack organizer app to categorize your tasks. App is connected with Mongo database. You can create your own user and login any time to see what you have to do. Project is based on Express and React. Tech stack: React, Express, Typescript, React Router, React Bootstrap',
+  'E-commerce website simulated real shop with all user funcionalities. You can add any of product to cart, change quantity and make an order. Tech stack: React with class components (without hooks), Redux, GSAP, React Router',
+  'Game is based on tradition rule to match pair of identical cards. You can see if your memory is better than your friends. Yout time will be recorded and present in case of match all pairs. Tech stack: React, Redux, Bulma, SCSS',
+  `It's my first diploma project which I' he prepared for my postgraduate studies "frontend with React". This project was prepared using vanilla js without any js framework. Tech stack: Vanilla js, SCSS, Json server, axios, uuid, prettier, eslint`,
+  `Weather app witch real time weather forecast. Webpage is connected to OpenWeather api. You can find any city and forecast to next 7 days in real time. Tech stack: React, Typescript, Axios, Redux`,
 ];

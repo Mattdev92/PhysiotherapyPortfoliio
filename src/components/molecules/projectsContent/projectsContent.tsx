@@ -7,6 +7,7 @@ import {
   ProjectMiniatures,
   ProjectsUrl,
   ProjectDescription,
+  ProjectTitles,
 } from 'helpers/helpers';
 
 const ProjectsContent: FC = () => {
@@ -37,6 +38,7 @@ const ProjectsContent: FC = () => {
           image={item}
           content={ProjectDescription[i]}
           link={ProjectsUrl[i]}
+          title={ProjectTitles[i]}
         />
       ))}
     </ContentWrapper>

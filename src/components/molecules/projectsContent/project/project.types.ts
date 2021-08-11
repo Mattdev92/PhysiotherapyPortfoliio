@@ -3,6 +3,7 @@ export interface ProjectProps {
   image: any;
   content: string;
   link: string;
+  title: string;
 }
 export interface DescriptionProps {
   show: boolean;
