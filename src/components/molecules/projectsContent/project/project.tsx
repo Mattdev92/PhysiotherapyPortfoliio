@@ -22,7 +22,10 @@ const Project: FC<ProjectProps> = ({
       onMouseLeave={() => setShowDescription(false)}
     >
       <StyledProject src={image} />
-      <CoverWrapper onMouseOver={() => setShowDescription(true)} />
+      <CoverWrapper
+        onMouseOver={() => setShowDescription(true)}
+        onClick={() => setShowDescription(true)}
+      />
       <Description show={showDescription} href={link}>
         <h2>{title}</h2>
         {showDescription && content}

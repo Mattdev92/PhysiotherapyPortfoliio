@@ -64,5 +64,6 @@ export const Description = styled.a<DescriptionProps>`
     height: 300px;
     width: 300px;
     font-size: ${({ theme }) => theme.fontSize.XS};
+    height: ${({ show }) => (show ? '250px' : 0)};
   }
 `;
