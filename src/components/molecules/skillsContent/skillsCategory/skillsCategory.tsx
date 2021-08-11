@@ -10,7 +10,6 @@ import PseudoCode from '../pseudoCode/pseudoCode';
 import { SkillsProps } from './skillsCategory.types';
 import SvgIcon from 'components/atoms/svgIcon/svgIcon';
 import { techIcons } from 'helpers/helpers';
-import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
 import AppContext from 'context';
 
 const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
@@ -46,9 +45,6 @@ const SkillsCategory: FC<SkillsProps> = ({ skill, category, refSkill }) => {
               />{' '}
               {category === `'FRONTEND ESSENTIALS'>` && (
                 <SvgIcon Icon={techIcons[i]} width={43} height={43} />
-              )}
-              {item === `React` && (
-                <SvgIcon Icon={ReactIcon} width={43} height={43} />
               )}
             </TextWrapper>
           );
