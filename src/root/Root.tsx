@@ -9,6 +9,7 @@ import SkillsView from 'views/skillsView/skillsView';
 import ContactView from 'views/contactView/contactView';
 import CvView from 'views/cvView/cvView';
 import AppContext from 'context';
+import ProjectsView from 'views/projectsView/projectsView';
 
 const Root: FC = () => {
   const [store, setStore] = useState({
@@ -44,6 +45,9 @@ const Root: FC = () => {
             </Route>
             <Route path="/about">
               <AboutView />
+            </Route>
+            <Route path="/projects">
+              <ProjectsView />
             </Route>
             <Route path="/skills">
               <SkillsView />

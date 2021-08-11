@@ -8,10 +8,12 @@ export const ContentWrapper = styled.section`
   grid-column: 3/13;
   grid-row: 1/4;
   overflow-y: scroll;
+  margin: auto;
   @media (max-width: 580px) {
-    margin: 15px;
+    margin: 5px 0;
     height: 90vh;
     display: flex;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
