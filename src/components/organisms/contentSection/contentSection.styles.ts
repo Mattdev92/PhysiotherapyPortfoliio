@@ -8,7 +8,7 @@ export const ContentWrapper = styled.section`
   grid-column: 3/13;
   grid-row: 1/4;
   overflow-y: scroll;
-  margin: auto;
+  justify-content: center;
   @media (max-width: 580px) {
     margin: 5px 0;
     height: 90vh;
