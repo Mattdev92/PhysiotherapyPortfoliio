@@ -61,6 +61,7 @@ export const Description = styled.a<DescriptionProps>`
   width: 400px;
   transition: all 1s ease-in-out;
   @media (max-width: 580px) {
+    margin: 10px 0;
     height: 300px;
     width: 300px;
     font-size: ${({ theme }) => theme.fontSize.XS};
