@@ -10,10 +10,12 @@ export const ProjectWrapper = styled.div`
   align-items: center;
   position: reletive;
   cursor: pointer;
+  align-self: center;
+  justify-self: center;
   @media (max-width: 580px) {
     height: 300px;
     width: 300px;
-    margin: 0;
+    margin: 10px 0;
   }
 `;
 export const StyledProject = styled.img`
@@ -34,7 +36,7 @@ export const CoverWrapper = styled.div`
   opacity: 20%;
   &:hover {
     opacity: 0;
-    transition: height 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
   }
   @media (max-width: 580px) {
     height: 300px;
@@ -61,10 +63,8 @@ export const Description = styled.a<DescriptionProps>`
   width: 400px;
   transition: all 1s ease-in-out;
   @media (max-width: 580px) {
-    margin: 10px 0;
-    height: 300px;
     width: 300px;
     font-size: ${({ theme }) => theme.fontSize.XS};
-    height: ${({ show }) => (show ? '250px' : 0)};
+    height: ${({ show }) => (show ? '300px' : 0)};
   }
 `;

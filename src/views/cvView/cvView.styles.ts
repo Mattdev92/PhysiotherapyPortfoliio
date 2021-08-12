@@ -8,4 +8,8 @@ export const StyledCv = styled.img`
     max-width: 80vw;
     height: auto;
   }
+  @media (max-width: 1280px) {
+    height: 60%;
+    margin-bottom: 20px;
+  }
 `;
