@@ -7,6 +7,7 @@ import { useContext } from 'react';
 import AppContext from 'context';
 import gsap from 'gsap';
 import { Back } from 'gsap/all';
+import NavBanner from 'components/molecules/navBanner/navBanner';
 
 const Nav: FC = () => {
   const refLogo = useRef(null);
@@ -41,10 +42,8 @@ const Nav: FC = () => {
         });
       }}
     >
-      <StyledIcon ref={refLogo} to="/">
-        <SvgIcon Icon={LogoIcon} height={80} width={110} />
-      </StyledIcon>
       <NavList refNav={refNav} />
+      <NavBanner />
     </NavWrapper>
   );
 };

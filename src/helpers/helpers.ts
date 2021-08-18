@@ -1,20 +1,6 @@
 import { ReactComponent as Face } from 'assets/portalIcons/face.svg';
 import { ReactComponent as Github } from 'assets/portalIcons/github.svg';
 import { ReactComponent as Linkedin } from 'assets/portalIcons/linkedin.svg';
-import { ReactComponent as HtmlIcon } from 'assets/techIcons/html-5.svg';
-import { ReactComponent as JsIcon } from 'assets/techIcons/js.svg';
-import { ReactComponent as CssIcon } from 'assets/techIcons/css.svg';
-import { ReactComponent as TypescriptIcon } from 'assets/techIcons/typescript.svg';
-import { ReactComponent as SassIcon } from 'assets/techIcons/sass.svg';
-import { ReactComponent as ReactIcon } from 'assets/techIcons/React.svg';
-
-import ItSpa from 'assets/projects/ItSpa.png';
-import MemoryGame from 'assets/projects/MemoryGame.png';
-import nativeMems from 'assets/projects/nativeMems.png';
-import OrgenizerApp from 'assets/projects/OrganizerApp.png';
-import Portfolio from 'assets/projects/Portfolio.png';
-import ShopProject from 'assets/projects/ShopProject.png';
-import WeatherApp from 'assets/projects/WeatherApp.png';
 
 // Content Data for Main Page template
 export const developer = [
@@ -32,8 +18,8 @@ export const phoneNumber = [
 ];
 
 // Navigation data
-export const Navdata = ['O MNIE', 'PROJEKTY', 'UMIEJĘTNOŚCI', 'KONTAKT', 'CV'];
-export const Url = ['/about', '/projects', '/skills', '/contact', '/CV'];
+export const Navdata = ['O MNIE', 'MASAŻE', 'FAQ', 'KONTAKT'];
+export const Url = ['/about', '/massage', '/FAQ', '/contact'];
 
 // Social Network data
 export const SocialNetworkIcon = [Face, Github, Linkedin];
@@ -130,36 +116,7 @@ export const toolsSkills = [
   'AdobeXD',
 ];
 
-export const techIcons = [
-  HtmlIcon,
-  CssIcon,
-  JsIcon,
-  TypescriptIcon,
-  ReactIcon,
-  SassIcon,
-];
-
-export const skills = [
-  frontendEssentialsSkills,
-  reactSkills,
-  mobileDevelopment,
-  backendsSkills,
-  backendFrameworks,
-  platformsSkills,
-  toolsSkills,
-];
-
 // Projects Data
-
-export const ProjectMiniatures = [
-  Portfolio,
-  nativeMems,
-  OrgenizerApp,
-  ShopProject,
-  MemoryGame,
-  ItSpa,
-  WeatherApp,
-];
 
 export const ProjectsUrl = [
   'https://github.com/Mattdev92/MatDevPortfolio',

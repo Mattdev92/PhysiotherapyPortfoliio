@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ListWrapper = styled.div`
+  width: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 `;
 
@@ -11,18 +13,17 @@ export const StyledLink = styled(NavLink)`
   position: relative;
   text-decoration: none;
   color: black;
-  margin: 16px 0;
   &.active {
     &:before {
       content: '';
       position: absolute;
       display: flex;
       justify-content: center;
-      top: 10px;
+      top: 5px;
       left: 50%;
       transform: translateX(-50%);
       height: 30px;
-      width: 90%;
+      width: 80%;
       border-bottom: 2px solid black;
     }
   }
@@ -34,4 +35,17 @@ export const StyledLink = styled(NavLink)`
       }
     }
   }
+`;
+export const NavWrapper = styled.div`
+  padding: 0 140px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const StyledIcon = styled(NavLink)`
+  margin: 0;
 `;

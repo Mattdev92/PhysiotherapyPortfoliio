@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { TextProps } from './text.types';
 
 export const TextContainer = styled.span<TextProps>`
-  width: 100%;
+  width: auto;
   margin: ${({ margin }) => margin + 'px'};
   ${({ marginLeft = 0 }) => marginLeft + 'px'};
   font-size: ${({ fontSize, theme }) => theme.fontSize[fontSize]};

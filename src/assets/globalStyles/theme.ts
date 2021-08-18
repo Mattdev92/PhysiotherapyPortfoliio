@@ -30,7 +30,7 @@ export interface StyleClosetTheme {
 
 export const theme: StyleClosetTheme = {
   colors: {
-    main: '#FFD350',
+    main: '#C3C6CD',
     content: '#F8FBFF',
     helper: '#4caf50',
   },

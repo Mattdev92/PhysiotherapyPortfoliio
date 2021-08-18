@@ -5,11 +5,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from 'assets/globalStyles/theme';
 import MainView from 'views/mainView/mainView';
 import AboutView from 'views/aboutView/aboutView';
-import SkillsView from 'views/skillsView/skillsView';
 import ContactView from 'views/contactView/contactView';
-import CvView from 'views/cvView/cvView';
 import AppContext from 'context';
-import ProjectsView from 'views/projectsView/projectsView';
 
 const Root: FC = () => {
   const [store, setStore] = useState({
@@ -46,17 +43,8 @@ const Root: FC = () => {
             <Route path="/about">
               <AboutView />
             </Route>
-            <Route path="/projects">
-              <ProjectsView />
-            </Route>
-            <Route path="/skills">
-              <SkillsView />
-            </Route>
             <Route path="/contact">
               <ContactView />
-            </Route>
-            <Route path="/CV">
-              <CvView />
             </Route>
           </Switch>
         </Router>

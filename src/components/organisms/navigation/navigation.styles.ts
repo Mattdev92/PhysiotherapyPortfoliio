@@ -3,15 +3,14 @@ import styled from 'styled-components';
 import { NavigationWrapperProps } from './navigation.types';
 
 export const NavWrapper = styled.nav<NavigationWrapperProps>`
-  z-index: 4;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: ${({ theme }) => theme.colors.main};
-  grid-column: 1/3;
-  grid-row: 1/4;
+  grid-column: 1/13;
+  grid-row: 1/2;
   width: 100%;
+  height: auto;
   @media (max-width: 580px) {
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0)' : 'translateX(-300px)'};

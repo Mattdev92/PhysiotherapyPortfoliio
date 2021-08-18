@@ -12,7 +12,7 @@ export const Wrapper = styled.div<WrapperProps>`
   background: ${({ scrollBackground, theme }) =>
     scrollBackground === true ? theme.colors.main : 'none'};
   z-index: 1;
-  width: 100%;
+  width: auto;
   border-radius: 5px;
   @media (max-width: 1800px) {
     grid-column: 8 / 11;
