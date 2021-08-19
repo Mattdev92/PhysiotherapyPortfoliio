@@ -1,9 +1,8 @@
-# Developer Portfolio
+# Physiotherapist Portfolio
 
-Hi ! It's my Portfolio created using React and TypeScript
-
+Hi ! It's Portfolio created for Proffesional Physiotherapist
 ## How it works
-![](devPortfolio.gif)
+![]
 
 ## Getting Started
 1. git clone 
