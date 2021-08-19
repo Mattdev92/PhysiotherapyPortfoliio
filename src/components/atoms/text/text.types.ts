@@ -5,10 +5,9 @@ export interface TextProps {
   fontWeight: string;
   fontSize: string;
   specialFont?: boolean;
-  margin: number;
+  margin: string;
   background?: boolean;
   color?: string;
-  marginLeft?: number;
   refText?: React.RefObject<any>;
   click?: () => void;
   pointer?: boolean;

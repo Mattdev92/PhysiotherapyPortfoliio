@@ -33,7 +33,7 @@ const AboutContent: FC = () => {
           key={item}
           fontWeight={'XM'}
           fontSize={'XS'}
-          margin={10}
+          margin={'10px'}
           center={item === '500 239 053' ? true : false}
         />
       ))}

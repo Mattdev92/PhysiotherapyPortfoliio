@@ -4,43 +4,41 @@ import { ReactComponent as Linkedin } from 'assets/portalIcons/linkedin.svg';
 
 // Content Data for Main Page template
 export const developer = [
-  'CZEŚĆ, tu MATI',
-  'WEB DEVELOPER',
-  'Front End Developer / React enthusiast',
+  'Licencjonowany fizjoterapeuta',
+  'Oferuje usługi z zakresu różnych technik masażu !',
 ];
 
 export const cv = ['Pobierz CV'];
 
 export const phoneNumber = [
-  'CZEŚĆ, tu MATI',
-  '500 239 053',
-  'Front End Developer / React enthusiast',
+  'Cześć tu Błażej Pietroń !',
+  `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
 ];
 
 // Navigation data
-export const Navdata = ['O MNIE', 'MASAŻE', 'FAQ', 'KONTAKT'];
+export const Navdata = ['O mnie', 'Masaże', 'FAQ', 'Kontakt'];
 export const Url = ['/about', '/massage', '/FAQ', '/contact'];
 
 // Social Network data
 export const SocialNetworkIcon = [Face, Github, Linkedin];
 
 export const SocialNetworkUrl = [
-  'https://www.facebook.com/mgrzejszczyk/',
-  'https://github.com/Mattdev92',
-  'https://www.linkedin.com/in/mateusz-grzejszczyk',
+  'https://pl-pl.facebook.com/people/B%C5%82a%C5%BCej-Pietro%C5%84/100001668048201/',
+  'https://google.com',
+  'https://coogle.com',
 ];
 
 // Main Page Template Data
 export const specialText = `"Prostota to szczyt wyrafinowania"
 — Walter Isaacson, Steve Jobs`;
-export const mainContentDataFontWight = ['S', 'M', 'XS'];
-export const mainContentDataFontSize = ['M', 'M', 'S'];
+export const mainContentDataFontWight = ['S', 'S'];
+export const mainContentDataFontSize = ['S', 'S'];
 
 // About View Content Data
 export const aboutContentData = [
-  'Już blisko dwa lata zbieram doświadczenie jako Frontend Developer. Początkowe zaciekawienie przerodziło się w pasję.',
-  'Chęć dalszego rozwoju sprawiła, że w przeciągu roku ukończyłem studia podyplomowe na kierunku Frontend Development z React, co w efekcie zaowocowało podjęciem pracy na pełen etat jako React Developer.',
-  'Mój mały sukces motywuje mnie do dalszego rozwoju dlatego tworzę własne projekty oraz śledzę z zaciekawieniem świat IT, a w szczególności dynamicznie zmieniające się środowisko Front Endu.',
+  `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
+  `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`,
 ];
 
 // Pseudo Code data

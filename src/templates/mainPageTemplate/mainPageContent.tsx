@@ -7,7 +7,7 @@ import {
 import ContentTemplate from 'templates/contentTemplate/contentTemplate';
 import { MainPageTemplateProps } from './mainPageContent.types';
 import MainTemplate from 'templates/mainTemplate/mainTemplate';
-import SpecialTextContainer from 'components/molecules/quoteText/quoteText';
+import PersonalImage from 'components/molecules/personalImage/personalImage';
 import gsap from 'gsap';
 import { Power0 } from 'gsap';
 import EmailComponent from 'components/molecules/emailComponent/emailComponent';
@@ -19,7 +19,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
   children,
 }) => {
   const refContent = useRef(null);
-  const refSpecialText = useRef(null);
+  const refSpecial = useRef(null);
   useEffect(() => {
     const contentTimeline = gsap.timeline({ repeat: 0, repeatDelay: 0 });
     contentTimeline.from(refContent.current, {
@@ -28,7 +28,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
       duration: 1,
       delay: 0.2,
     });
-    contentTimeline.from(refSpecialText.current, {
+    contentTimeline.from(refSpecial.current, {
       opacity: 0,
       ease: Power0.easeOut,
       duration: 1,
@@ -48,33 +48,21 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
             key={item}
             fontWeight={mainContentDataFontWight[i]}
             fontSize={mainContentDataFontSize[i]}
-            margin={10}
+            margin={`20px 0px`}
             background={
-              item === 'WEB DEVELOPER' ||
-              item === 'Pobierz CV' ||
-              item === '500 239 053'
+              item === 'Licencjonowany fizjoterapeuta' ||
+              item === 'Cześć tu Błażej Pietroń !'
                 ? true
                 : false
             }
-            center={
-              item === 'WEB DEVELOPER' ||
-              item === 'Pobierz CV' ||
-              item === '500 239 053'
-                ? true
-                : false
-            }
-            click={() => {
-              if (item === 'Pobierz CV') {
-                window.open('resume/cv.pdf', '_black');
-              }
-            }}
+            center={false}
           />
         ))}
       </ContentTemplate>
       {mail ? (
-        <EmailComponent refEmail={refSpecialText} />
+        <EmailComponent refEmail={refSpecial} />
       ) : (
-        <SpecialTextContainer refSpcialText={refSpecialText} />
+        <PersonalImage refSpecial={refSpecial} />
       )}
     </MainTemplate>
   );

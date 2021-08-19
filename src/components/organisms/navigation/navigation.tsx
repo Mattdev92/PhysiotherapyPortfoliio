@@ -1,7 +1,5 @@
 import { FC, useEffect, useRef } from 'react';
-import { NavWrapper, StyledIcon } from './navigation.styles';
-import { ReactComponent as LogoIcon } from 'assets/logoIcon/logo.svg';
-import SvgIcon from 'components/atoms/svgIcon/svgIcon';
+import { NavWrapper } from './navigation.styles';
 import NavList from 'components/molecules/navList/navList';
 import { useContext } from 'react';
 import AppContext from 'context';

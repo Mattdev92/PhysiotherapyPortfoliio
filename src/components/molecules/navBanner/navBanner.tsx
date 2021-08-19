@@ -8,8 +8,8 @@ const NavBanner: FC = () => {
       <Text
         content={'Cześć tu Błażej !'}
         fontWeight={'M'}
-        fontSize={'M'}
-        margin={10}
+        fontSize={'S'}
+        margin={'0'}
       />
       <Foot src={FootImage} />
     </NavBannerWrapper>

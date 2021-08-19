@@ -32,7 +32,7 @@ export const theme: StyleClosetTheme = {
   colors: {
     main: '#C3C6CD',
     content: '#F8FBFF',
-    helper: '#4caf50',
+    helper: '#36CBEF',
   },
   fontFamily: {
     mainFont: `Encode Sans SC`,

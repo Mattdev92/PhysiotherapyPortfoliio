@@ -24,7 +24,7 @@ export const StyledLink = styled(NavLink)`
       transform: translateX(-50%);
       height: 30px;
       width: 80%;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid ${({ theme }) => theme.colors.helper};
     }
   }
   @media (max-width: 580px) {
@@ -46,6 +46,7 @@ export const NavWrapper = styled.div`
   align-items: center;
 `;
 
-export const StyledIcon = styled(NavLink)`
+export const StyledLogo = styled(NavLink)`
   margin: 0;
+  text-decoration: none;
 `;

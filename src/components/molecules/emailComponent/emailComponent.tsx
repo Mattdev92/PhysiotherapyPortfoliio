@@ -17,7 +17,7 @@ const EmailComponent: FC<EmailProps> = ({ refEmail }) => {
         fontSize={
           actualScreenWidth < 580 || window.innerWidth < 580 ? 'XS' : 'S'
         }
-        margin={0}
+        margin={'0'}
         color={'white'}
         pointer={true}
         click={() => window.open('mailto:mateusz.grzejszczyk1@gmail.com')}

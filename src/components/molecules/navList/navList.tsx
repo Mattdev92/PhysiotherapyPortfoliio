@@ -1,21 +1,18 @@
-import React, { FC, useRef } from 'react';
+import { FC, useRef } from 'react';
 import Text from 'components/atoms/text/text';
 import { Navdata, Url } from 'helpers/helpers';
 import { ListWrapper, NavWrapper, StyledLink } from './navList.styles';
 import { NavListProps } from './navList.types';
-import { StyledIcon } from './navList.styles';
-import SvgIcon from 'components/atoms/svgIcon/svgIcon';
-import { ReactComponent as LogoIcon } from 'assets/logoIcon/logo.svg';
+import { StyledLogo } from './navList.styles';
 import SocialNetworkIcons from 'components/molecules/socialNetworkIcons/socialNetworkIcons';
-
+import Logo from 'components/atoms/logo/logo';
 const NavList: FC<NavListProps> = ({ refNav }) => {
   const refLogo = useRef(null);
   return (
     <NavWrapper>
-      <StyledIcon ref={refLogo} to="/">
-        <SvgIcon Icon={LogoIcon} height={80} width={110} />
-      </StyledIcon>
-
+      <StyledLogo ref={refLogo} to="/">
+        <Logo />
+      </StyledLogo>
       <ListWrapper ref={refNav}>
         {Navdata.map((item, i: number) => (
           <StyledLink to={Url[i]} key={i}>
@@ -24,7 +21,7 @@ const NavList: FC<NavListProps> = ({ refNav }) => {
               key={item}
               fontSize={'XS'}
               fontWeight={'M'}
-              margin={17}
+              margin={'17px'}
               pointer={true}
             />
           </StyledLink>

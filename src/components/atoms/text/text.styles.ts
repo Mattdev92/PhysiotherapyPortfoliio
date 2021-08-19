@@ -2,9 +2,8 @@ import styled from 'styled-components';
 import { TextProps } from './text.types';
 
 export const TextContainer = styled.span<TextProps>`
-  width: auto;
-  margin: ${({ margin }) => margin + 'px'};
-  ${({ marginLeft = 0 }) => marginLeft + 'px'};
+  width: fit-content;
+  margin: ${({ margin }) => margin};
   font-size: ${({ fontSize, theme }) => theme.fontSize[fontSize]};
   font-family: ${({ specialFont = false, theme }) =>
       specialFont ? theme.fontFamily.specialFont : theme.fontFamily.mainFont},
@@ -12,7 +11,7 @@ export const TextContainer = styled.span<TextProps>`
       specialFont ? theme.fontType.cursive : theme.fontType.serif};
   font-weight: ${({ fontWeight, theme }) => theme.fontWeight[fontWeight]};
   background: ${({ background = false, theme }) =>
-    background ? theme.colors.main : 'none'};
+    background ? theme.colors.helper : 'none'};
   border: none;
   color: ${({ color = 'black' }) => color};
   border-radius: 5px;
