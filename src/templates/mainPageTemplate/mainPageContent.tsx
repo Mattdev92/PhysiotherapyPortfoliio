@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import Text from 'components/atoms/text/text';
 import {
   mainContentDataFontSize,
@@ -10,7 +10,7 @@ import MainTemplate from 'templates/mainTemplate/mainTemplate';
 import PersonalImage from 'components/molecules/personalImage/personalImage';
 import gsap from 'gsap';
 import { Power0 } from 'gsap';
-import EmailComponent from 'components/molecules/emailComponent/emailComponent';
+import HandShake from 'components/atoms/handShake/handShake';
 
 const MainPageTemplate: FC<MainPageTemplateProps> = ({
   content,
@@ -51,7 +51,8 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
             margin={`20px 0px`}
             background={
               item === 'Licencjonowany fizjoterapeuta' ||
-              item === 'Cześć tu Błażej Pietroń !'
+              item === 'Cześć tu Błażej Pietroń !' ||
+              item === '696 752 302'
                 ? true
                 : false
             }
@@ -59,11 +60,8 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
           />
         ))}
       </ContentTemplate>
-      {mail ? (
-        <EmailComponent refEmail={refSpecial} />
-      ) : (
-        <PersonalImage refSpecial={refSpecial} />
-      )}
+      <HandShake />
+      <PersonalImage refSpecial={refSpecial} />
     </MainTemplate>
   );
 };

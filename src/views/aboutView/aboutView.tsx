@@ -1,15 +1,7 @@
 import { FC } from 'react';
-import AboutContent from 'components/molecules/aboutContent/aboutContent';
-import MainTemplate from 'templates/mainTemplate/mainTemplate';
-import HelloTextContainer from 'components/molecules/textMe/textMe';
+import { about } from 'helpers/helpers';
+import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
 
-const AboutView: FC = () => {
-  return (
-    <MainTemplate>
-      <AboutContent />
-      <HelloTextContainer />
-    </MainTemplate>
-  );
-};
+const AboutView: FC = () => <MainPageTemplate content={about} />;
 
 export default AboutView;

@@ -7,6 +7,8 @@ import MainView from 'views/mainView/mainView';
 import AboutView from 'views/aboutView/aboutView';
 import ContactView from 'views/contactView/contactView';
 import AppContext from 'context';
+import MassageView from 'views/massageView/massageView';
+import FAQView from 'views/FAQ/FAQView';
 
 const Root: FC = () => {
   const [store, setStore] = useState({
@@ -45,6 +47,12 @@ const Root: FC = () => {
             </Route>
             <Route path="/contact">
               <ContactView />
+            </Route>
+            <Route path="/massage">
+              <MassageView />
+            </Route>
+            <Route path="/FAQ">
+              <FAQView />
             </Route>
           </Switch>
         </Router>
