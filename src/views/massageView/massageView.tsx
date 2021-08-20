@@ -1,9 +1,13 @@
 import { FC } from 'react';
-import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
-import { main } from 'helpers/helpers';
+import MainTemplate from 'templates/mainTemplate/mainTemplate';
+import MassageContent from 'components/molecules/massageContent/massageContent';
 
 const MassageView: FC = () => {
-  return <MainPageTemplate content={main} />;
+  return (
+    <MainTemplate>
+      <MassageContent />
+    </MainTemplate>
+  );
 };
 
 export default MassageView;
