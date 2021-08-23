@@ -1,9 +1,8 @@
 import { FC } from 'react';
-import MainPageTemplate from 'templates/mainPageTemplate/mainPageContent';
-import { main } from 'helpers/helpers';
+import MainTemplate from 'templates/mainTemplate/mainTemplate';
 
 const FAQView: FC = () => {
-  return <MainPageTemplate content={main} />;
+  return <MainTemplate>FAQ</MainTemplate>;
 };
 
 export default FAQView;

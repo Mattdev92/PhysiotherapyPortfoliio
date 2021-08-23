@@ -11,6 +11,7 @@ import PersonalImage from 'components/molecules/personalImage/personalImage';
 import gsap from 'gsap';
 import { Power0 } from 'gsap';
 import HandShake from 'components/atoms/handShake/handShake';
+import Button from 'components/atoms/button/button';
 
 const MainPageTemplate: FC<MainPageTemplateProps> = ({
   content,
@@ -61,7 +62,11 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
         ))}
       </ContentTemplate>
       <HandShake />
-      <PersonalImage refSpecial={refSpecial} />
+      {mail ? (
+        <Button content={'Blazej@gmail.com'} />
+      ) : (
+        <PersonalImage refSpecial={refSpecial} />
+      )}
     </MainTemplate>
   );
 };

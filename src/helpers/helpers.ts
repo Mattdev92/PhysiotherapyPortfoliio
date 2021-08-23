@@ -5,7 +5,7 @@ import { ReactComponent as Linkedin } from 'assets/portalIcons/linkedin.svg';
 // Content Data for Main Page template
 export const main = [
   'Licencjonowany fizjoterapeuta',
-  'Oferuje usługi z zakresu różnych technik masażu !',
+  'Oferuje usługi z zakresu różnych technik masażu ! W dzisiejszych czasach w świecie, który niesutannie pędzi, żyjemy w ciągłym napięciu i stresie. Usługi pozwalające zachować zdrowie są na miare złota. Masaż działa nie tylko na ciało ale również pomaga odzyskać kontrolę nad emocjami, będziesz funkcjonował wydajniej w życiu prywatnym i służbowym. Mówiąc wprost pozwól mi sprawić żeby ten dzień był lepszy !',
 ];
 export const contact = [
   '696 752 302',
@@ -13,8 +13,8 @@ export const contact = [
 ];
 
 export const about = [
-  'Cześć tu Błażej Pietroń !',
-  `Mam na imię Błażej, jestem Fizjoterapeutą od 2017r. Obecnie dokształcam się na poziomie magisterskim. Oferuję masaż z dojazdem, posiadam profesjonalny, wygodny stół do masażu i terapii. Dojazd w Warszawie i okolicach (za dalsze dojazdy dodatkowa opłata ‘na paliwo’). Pracuję od poniedziałku do niedzieli od 6 do 23, z racji studiów zaocznych w co drugi weekend nie jestem dostępny, ale wszystko do dogadania.`,
+  'Krótko o mnie...',
+  `Jestem licencjonowanym fizjoterapeutą od 2017r. Studiuję na ostatnim roku studiów magisterskich. Od blisko roku zajmuję się profesjonalnie masażem. Początkowe zainteresowanie przerodziło się w pasję oraz nieustanne pogłębianie wiedzy medycznej z zakresu fizjoterapii, a szczególnie różnych technik masażu. Oferuję masaż z dojazdem, posiadam profesjonalny, wygodny stół do masażu i terapii.`,
 ];
 
 // Navigation data
@@ -32,7 +32,7 @@ export const SocialNetworkUrl = [
 
 // Main Page Template Data
 export const mainContentDataFontWight = ['S', 'S'];
-export const mainContentDataFontSize = ['S', 'S'];
+export const mainContentDataFontSize = ['S', 'XS'];
 
 // About View Content Data
 export const aboutContentData = [

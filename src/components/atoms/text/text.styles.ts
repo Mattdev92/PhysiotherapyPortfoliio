@@ -14,7 +14,7 @@ export const TextContainer = styled.span<TextProps>`
     background ? theme.colors.helper : 'none'};
   border: none;
   color: ${({ color = 'black' }) => color};
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 4px;
   cursor: ${({ pointer = false }) => (pointer ? 'pointer' : 'default')};
   text-align: ${({ center }) => (center ? 'center' : 'left')};

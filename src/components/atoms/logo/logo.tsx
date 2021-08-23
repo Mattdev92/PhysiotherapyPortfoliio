@@ -4,7 +4,7 @@ import { StyledText } from './logo.styles';
 const Logo: FC = () => (
   <StyledText
     content={'FIZJO.B'}
-    fontSize={'M'}
+    fontSize={'S'}
     fontWeight={'M'}
     margin={'0'}
   />

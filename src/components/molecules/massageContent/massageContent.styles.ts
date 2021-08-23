@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  height: 100px;
-  width: 100px;
-  border: 1px solid black;
+  top: 45vh;
+  width: 100vw;
+  left: 0;
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 0;
+  align-self: center;
 `;
