@@ -8,9 +8,10 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   justify-content: flex-start;
   align-items: center;
   grid-column: 1/13;
-  grid-row: 1/2;
+  grid-row: 1/4;
   width: 100%;
-  height: auto;
+  height: 100%;
+
   @media (max-width: 580px) {
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0)' : 'translateX(-300px)'};

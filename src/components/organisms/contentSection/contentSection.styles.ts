@@ -7,7 +7,7 @@ export const ContentWrapper = styled.section`
   grid-template-rows: repeat(3, 1fr);
   background: ${({ theme }) => theme.colors.content};
   grid-column: 2/12;
-  grid-row: 2/4;
+  grid-row: 4/10;
   @media (max-width: 580px) {
     margin: 5px 0;
     height: 90vh;

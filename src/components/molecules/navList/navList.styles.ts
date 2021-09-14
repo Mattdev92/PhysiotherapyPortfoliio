@@ -38,7 +38,7 @@ export const StyledLink = styled(NavLink)`
 `;
 export const NavWrapper = styled.div`
   padding: 0 140px;
-  height: 100px;
+  height: 30%;
   width: 100%;
   display: flex;
   flex-direction: row;

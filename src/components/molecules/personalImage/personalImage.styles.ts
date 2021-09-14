@@ -11,8 +11,9 @@ export const PersonalImageWrapper = styled.div`
   align-items: flex-start;
 `;
 export const StyledImage = styled.img`
+  max-height: 100%;
   height: 450px;
-  width: 600px;
+  width: 100%;
   object-fit: cover;
   margin: 0;
   border-radius: 10px;

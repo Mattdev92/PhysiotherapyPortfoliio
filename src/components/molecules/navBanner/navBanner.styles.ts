@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavBannerWrapper = styled.div`
   width: 100%;
-  height: 200px;
+  height: 70%;
   margin: 0;
   background: ${({ theme }) => theme.colors.main};
   display: flex;
@@ -13,5 +13,5 @@ export const NavBannerWrapper = styled.div`
 `;
 export const Foot = styled.img`
   width: auto;
-  height: 200px;
+  height: 100%;
 `;
