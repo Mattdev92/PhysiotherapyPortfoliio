@@ -8,6 +8,7 @@ export const ContentWrapper = styled.section`
   background: ${({ theme }) => theme.colors.content};
   grid-column: 2/12;
   grid-row: 4/10;
+  max-height: 100%;
   @media (max-width: 580px) {
     margin: 5px 0;
     height: 90vh;

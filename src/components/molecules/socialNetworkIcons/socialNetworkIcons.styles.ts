@@ -2,15 +2,9 @@ import styled from 'styled-components';
 import { WrapperProps } from './socialNetworkIcons.types';
 
 export const Wrapper = styled.div<WrapperProps>`
-  top: 0;
-  position: sticky;
-  padding: 20px 0;
   grid-column: 9 / 11;
   grid-row: 1 / 2;
-  align-self: start;
-  height: 80px;
-  background: ${({ scrollBackground, theme }) =>
-    scrollBackground === true ? theme.colors.main : 'none'};
+  align-self: center;
   z-index: 1;
   width: auto;
   border-radius: 5px;

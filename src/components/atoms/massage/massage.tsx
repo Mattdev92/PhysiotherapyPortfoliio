@@ -20,7 +20,7 @@ const Massage: FC = () => {
       <Description show={showDescription}>
         <h2>Masaż</h2>
         {showDescription && 'Lorem ipsum bla bla bla itp itd'}
-        <Button content="GITHUB" />
+        <Button content="OPIS" />
       </Description>
     </Wrapper>
   );

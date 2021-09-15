@@ -18,7 +18,7 @@ export const CoverWrapper = styled.div`
   z-index: 2;
   position: absolute;
   top: 0;
-  height: 300px;
+  height: 100%;
   width: 300px;
   opacity: 20%;
   border-radius: 20px;
