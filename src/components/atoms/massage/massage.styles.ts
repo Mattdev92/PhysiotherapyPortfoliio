@@ -6,6 +6,14 @@ export const Wrapper = styled.div`
   justify-self: center;
   position: relative;
 `;
+export const ModalWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+`;
 export const StyledImage = styled.img`
   align-self: center;
   justify-self: center;
