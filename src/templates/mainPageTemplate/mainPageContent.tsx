@@ -3,6 +3,7 @@ import Text from 'components/atoms/text/text';
 import {
   mainContentDataFontSize,
   mainContentDataFontWight,
+  mainContentDataFontSizeWidth,
 } from 'helpers/helpers';
 import ContentTemplate from 'templates/contentTemplate/contentTemplate';
 import { MainPageTemplateProps } from './mainPageContent.types';
@@ -20,6 +21,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
   pointer,
   children,
 }) => {
+  const width = window.innerWidth;
   const refContent = useRef(null);
   const refSpecial = useRef(null);
   useEffect(() => {
@@ -49,7 +51,11 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
             content={item}
             key={item}
             fontWeight={mainContentDataFontWight[i]}
-            fontSize={mainContentDataFontSize[i]}
+            fontSize={
+              width > 1100
+                ? mainContentDataFontSize[i]
+                : mainContentDataFontSizeWidth[i]
+            }
             margin={`20px 0px`}
             background={
               item === 'Licencjonowany fizjoterapeuta' ||

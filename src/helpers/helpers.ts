@@ -33,6 +33,7 @@ export const SocialNetworkUrl = [
 // Main Page Template Data
 export const mainContentDataFontWight = ['S', 'S'];
 export const mainContentDataFontSize = ['S', 'XS'];
+export const mainContentDataFontSizeWidth = ['XS', 'XXS'];
 
 // About View Content Data
 export const aboutContentData = [
