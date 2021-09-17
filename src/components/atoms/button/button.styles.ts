@@ -10,4 +10,6 @@ export const StyledButton = styled.button`
   background: ${({ theme }) => theme.colors.helper};
   border-radius: 5px;
   border: none;
+  width: 200px;
+  font-size: 20px;
 `;

@@ -12,6 +12,7 @@ import gsap from 'gsap';
 import { Power0 } from 'gsap';
 import HandShake from 'components/atoms/handShake/handShake';
 import Button from 'components/atoms/button/button';
+import { ButtonWrapper } from './msinPageContent.styles';
 
 const MainPageTemplate: FC<MainPageTemplateProps> = ({
   content,
@@ -60,13 +61,14 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
             center={false}
           />
         ))}
+        {mail && (
+          <ButtonWrapper>
+            <Button content={'Blazej@gmail.com'} />
+          </ButtonWrapper>
+        )}
       </ContentTemplate>
       <HandShake />
-      {mail ? (
-        <Button content={'Blazej@gmail.com'} />
-      ) : (
-        <PersonalImage refSpecial={refSpecial} />
-      )}
+      <PersonalImage refSpecial={refSpecial} />
     </MainTemplate>
   );
 };
