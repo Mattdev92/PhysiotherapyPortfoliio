@@ -31,6 +31,10 @@ export const IconWrapper = styled.div`
   width: 100%;
   min-width: 250px;
   height: 100%;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    justify-content: space-evenly;
+  } ;
 `;
 
 export const StyledIcon = styled.a`

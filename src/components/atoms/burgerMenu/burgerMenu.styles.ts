@@ -5,7 +5,7 @@ export const BurgerWrapper = styled.div<BurgerWrapperProps>`
   display: none;
   width: 40px;
   height: 30px;
-  @media (max-width: 580px) {
+  @media (max-width: 850px) {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;

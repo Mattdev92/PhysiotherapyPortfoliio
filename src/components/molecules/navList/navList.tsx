@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC, useRef, useContext } from 'react';
 import Text from 'components/atoms/text/text';
 import { Navdata, Url } from 'helpers/helpers';
 import { ListWrapper, NavWrapper, StyledLink } from './navList.styles';
@@ -6,7 +6,12 @@ import { NavListProps } from './navList.types';
 import { StyledLogo } from './navList.styles';
 import SocialNetworkIcons from 'components/molecules/socialNetworkIcons/socialNetworkIcons';
 import Logo from 'components/atoms/logo/logo';
+import AppContext from 'context';
 const NavList: FC<NavListProps> = ({ refNav }) => {
+  const {
+    store: { mobileNav },
+  } = useContext(AppContext);
+  console.log(mobileNav);
   const refLogo = useRef(null);
   return (
     <NavWrapper>

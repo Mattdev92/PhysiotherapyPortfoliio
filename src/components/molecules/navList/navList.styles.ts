@@ -7,6 +7,10 @@ export const ListWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 850px) {
+    flex-direction: column;
+    justify-content: space-between;
+  } ;
 `;
 
 export const StyledLink = styled(NavLink)`
@@ -19,7 +23,7 @@ export const StyledLink = styled(NavLink)`
       position: absolute;
       display: flex;
       justify-content: center;
-      top: 5px;
+      top: -5px;
       left: 50%;
       transform: translateX(-50%);
       height: 30px;
@@ -44,6 +48,16 @@ export const NavWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 850px) {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    transform: translateX(-400px);
+    background: yellow;
+  } ;
 `;
 
 export const StyledLogo = styled(NavLink)`

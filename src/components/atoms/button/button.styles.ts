@@ -12,4 +12,5 @@ export const StyledButton = styled.button`
   border: none;
   width: 200px;
   font-size: 20px;
+  max-width: 100%;
 `;

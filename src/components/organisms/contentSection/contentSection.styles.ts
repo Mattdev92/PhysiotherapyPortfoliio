@@ -9,6 +9,7 @@ export const ContentWrapper = styled.section`
   grid-column: 2/12;
   grid-row: 4/10;
   max-height: 100%;
+  max-width: 100%;
   @media (max-width: 580px) {
     margin: 5px 0;
     height: 90vh;

@@ -11,17 +11,8 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   grid-row: 1/4;
   width: 100%;
   height: 100%;
-
-  @media (max-width: 580px) {
-    transform: ${({ mobile }) =>
-      mobile ? 'translateX(0)' : 'translateX(-300px)'};
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 300px;
-    height: 100vh;
-    transition: transform 0.3s ease-in;
+  @media (max-width: 850px) {
+    align-items: left;
   }
 `;
 

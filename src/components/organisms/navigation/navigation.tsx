@@ -6,6 +6,7 @@ import AppContext from 'context';
 import gsap from 'gsap';
 import { Back } from 'gsap/all';
 import NavBanner from 'components/molecules/navBanner/navBanner';
+import BurgerMenu from 'components/atoms/burgerMenu/burgerMenu';
 
 const Nav: FC = () => {
   const refLogo = useRef(null);
@@ -32,14 +33,8 @@ const Nav: FC = () => {
   } = useContext(AppContext);
 
   return (
-    <NavWrapper
-      mobile={mobileNav}
-      onClick={() => {
-        setStore({
-          mobileNav: false,
-        });
-      }}
-    >
+    <NavWrapper mobile={mobileNav}>
+      <BurgerMenu onClick={() => setStore({ mobileNav: true })} />
       <NavList refNav={refNav} />
       <NavBanner />
     </NavWrapper>
