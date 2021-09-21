@@ -11,8 +11,12 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
   grid-row: 1/4;
   width: 100%;
   height: 100%;
-  @media (max-width: 850px) {
-    align-items: left;
+  @media (max-width: 580px) {
+    position: absolute;
+    align-items: flex-start;
+    display: flex;
+    top: 0;
+    left: 0;
   }
 `;
 

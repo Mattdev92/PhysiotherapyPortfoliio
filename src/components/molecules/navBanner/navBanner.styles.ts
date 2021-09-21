@@ -10,6 +10,9 @@ export const NavBannerWrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
   padding: 0 140px;
+  @media (max-width: 580px) {
+    display: none;
+  }
 `;
 export const Foot = styled.img`
   width: auto;

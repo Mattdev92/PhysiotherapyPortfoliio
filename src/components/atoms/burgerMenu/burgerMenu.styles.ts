@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { BurgerWrapperProps } from './burgerMenu.types';
 
 export const BurgerWrapper = styled.div<BurgerWrapperProps>`
+  margin: 10px;
   display: none;
   width: 40px;
   height: 30px;
-  @media (max-width: 850px) {
+  @media (max-width: 580px) {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;

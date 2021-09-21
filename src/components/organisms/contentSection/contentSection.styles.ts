@@ -11,8 +11,9 @@ export const ContentWrapper = styled.section`
   max-height: 100%;
   max-width: 100%;
   @media (max-width: 580px) {
+    grid-column: 1/12;
+    grid-row: 3/10;
     margin: 5px 0;
-    height: 90vh;
     display: flex;
     width: 100%;
     align-items: center;

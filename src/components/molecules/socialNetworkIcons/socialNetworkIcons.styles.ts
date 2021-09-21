@@ -32,8 +32,7 @@ export const IconWrapper = styled.div`
   min-width: 250px;
   height: 100%;
   @media (max-width: 850px) {
-    flex-direction: column;
-    justify-content: space-evenly;
+    min-width: 150px;
   } ;
 `;
 
@@ -43,9 +42,9 @@ export const StyledIcon = styled.a`
   align-items: center;
   width: auto;
   height: auto;
-  @media (max-width: 580px) {
+  @media (max-width: 850px) {
     justify-content: space-between;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
   }
 `;

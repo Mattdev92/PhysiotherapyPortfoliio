@@ -10,11 +10,15 @@ import AppContext from 'context';
 const NavList: FC<NavListProps> = ({ refNav }) => {
   const {
     store: { mobileNav },
+    setStore,
   } = useContext(AppContext);
   console.log(mobileNav);
   const refLogo = useRef(null);
   return (
-    <NavWrapper>
+    <NavWrapper
+      mobile={mobileNav}
+      onClick={() => setStore({ mobileNav: false })}
+    >
       <StyledLogo ref={refLogo} to="/">
         <Logo />
       </StyledLogo>
