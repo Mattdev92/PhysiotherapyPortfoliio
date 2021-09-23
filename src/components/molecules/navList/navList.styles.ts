@@ -63,7 +63,8 @@ export const NavWrapper = styled.div<NavWrapperProps>`
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0px)' : 'translateX(-200px)'};
     transition: transform 0.5s ease-in;
-    background: yellow;
+    background: rgb(50, 50, 50);
+    color: white;
   }
   @media (max-width: 1000px) {
     padding: 0 10px;

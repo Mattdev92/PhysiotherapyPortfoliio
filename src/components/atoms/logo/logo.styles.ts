@@ -8,4 +8,7 @@ export const StyledText = styled(Text)`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  @media (max-width: 580px) {
+    background: white;
+  }
 `;

@@ -17,6 +17,9 @@ export const NavWrapper = styled.nav<NavigationWrapperProps>`
     display: flex;
     top: 0;
     left: 0;
+    z-index: 999;
+    width: auto;
+    height: auto;
   }
 `;
 

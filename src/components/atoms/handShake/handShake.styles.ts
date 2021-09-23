@@ -12,4 +12,9 @@ export const StyledCircle = styled.div`
   background: ${({ theme }) => theme.colors.helper};
   border: none;
   cursor: pointer;
+  @media (max-width: 580px) {
+    margin: 15px;
+    width: 80px;
+    height: 80px;
+  }
 `;

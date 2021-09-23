@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  top: 45vh;
+  margin-bottom: 50px;
+  top: 35vh;
   width: 100%;
   left: 0;
   position: absolute;
@@ -12,4 +13,7 @@ export const Wrapper = styled.div`
   justify-content: center;
   gap: 10px 0;
   align-self: center;
+  @media (max-width: 580px) {
+    top: 50px;
+  }
 `;
