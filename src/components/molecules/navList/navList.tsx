@@ -32,6 +32,7 @@ const NavList: FC<NavListProps> = ({ refNav }) => {
               fontWeight={'M'}
               margin={'17px'}
               pointer={true}
+              color={window.innerWidth <= 580 ? 'white' : 'black'}
             />
           </StyledLink>
         ))}

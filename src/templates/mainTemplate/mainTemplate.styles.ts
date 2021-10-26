@@ -16,8 +16,10 @@ export const MainWrapper = styled.main`
     grid-template-columns: repeat(6, 1fr);
   }
   @media (max-width: 580px) {
+    margin-top: 30px;
+    height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
   }
 `;

@@ -18,4 +18,7 @@ export const StyledImage = styled.img`
   margin: 0;
   border-radius: 10px;
   overflow: scroll;
+  @media (max-width: 580px) {
+    height: 350px;
+  }
 `;

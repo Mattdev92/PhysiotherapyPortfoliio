@@ -1,41 +1,25 @@
 import styled from 'styled-components';
-import { DescriptionProps } from './massage.props';
+import { DescriptionProps } from './massage.types';
 
 export const Wrapper = styled.div`
   align-self: center;
   justify-self: center;
   position: relative;
+  @media (max-width: 580px) {
+    margin-bottom: 40px;
+  }
 `;
-export const ModalWrapper = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 400px;
-`;
+
 export const StyledImage = styled.img`
   align-self: center;
   justify-self: center;
   width: 300px;
   object-fit: cover;
   border-radius: 20px;
-`;
-export const CoverWrapper = styled.div`
-  background: black;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 300px;
-  opacity: 20%;
-  border-radius: 20px;
-  &:hover {
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
+  @media (max-width: 1300px) {
+    width: 200px;
   }
   @media (max-width: 580px) {
-    height: 300px;
     width: 300px;
   }
 `;
@@ -52,14 +36,15 @@ export const Description = styled.a<DescriptionProps>`
   font-family: ${({ theme }) => theme.fontFamily.mainFont};
   color: black;
   background: ${({ theme }) => theme.colors.content};
-  z-index: 2;
   position: absolute;
-  top: 160px;
+  top: 0;
   left: 0;
   height: ${({ show }) => (show ? '250px' : 0)};
   width: 300px;
   transition: all 1s ease;
-
+  @media (max-width: 1300px) {
+    width: 200px;
+  }
   @media (max-width: 580px) {
     top: 0;
     width: 300px;
