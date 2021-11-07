@@ -47,71 +47,51 @@ export const bannerText = [
 // Massages
 export const massageData = [
   {
-    title: 'Masaż błotem',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Masaż żwirem',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing',
   },
   {
-    title: 'Masaż miodem',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Masaż szkłem',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
 ];
 
 // FAQ
 export const faqData = [
   {
-    title: 'Co ja tu robie',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Czemu masaż żwirem ? ',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Czemu masaż miodem ?',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Czy masaż szkłem jest skuteczny ?',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Co ja tu robie',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Czemu masaż żwirem ? ',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
   {
-    title: 'Czemu masaż miodem ?',
-    description: 'blablaf sadf sad asd sa as ',
-  },
-  {
-    title: 'Czy masaż szkłem jest skuteczny ?',
-    description: 'blablaf sadf sad asd sa as ',
-  },
-  {
-    title: 'Co ja tu robie',
-    description: 'blablaf sadf sad asd sa as ',
-  },
-  {
-    title: 'Czemu masaż żwirem ? ',
-    description: 'blablaf sadf sad asd sa as ',
-  },
-  {
-    title: 'Czemu masaż miodem ?',
-    description: 'blablaf sadf sad asd sa as ',
-  },
-  {
-    title: 'Czy masaż szkłem jest skuteczny ?',
-    description: 'blablaf sadf sad asd sa as ',
+    title: 'Lorem Ipsum',
+    description: 'Lorem Ipsum is simply dummy text of the printing ',
   },
 ];
