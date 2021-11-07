@@ -28,7 +28,7 @@ export const Description = styled.a<DescriptionProps>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: left;
+  align-items: center;
   text-decoration: none;
   padding: 10px;
   font-size: ${({ theme }) => theme.fontSize.XS};
@@ -51,4 +51,21 @@ export const Description = styled.a<DescriptionProps>`
     font-size: ${({ theme }) => theme.fontSize.XS};
     height: ${({ show }) => (show ? '300px' : 0)};
   }
+`;
+
+export const Title = styled.h1`
+  display: flex;
+  justify-content: center;
+  text-align: center;
+`;
+export const ParagraphWrapper = styled.p`
+  text-align: justify;
+`;
+
+export const DescriptionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-self: center;
+  padding-bottom: 5px;
 `;

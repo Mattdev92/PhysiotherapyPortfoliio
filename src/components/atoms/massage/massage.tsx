@@ -1,8 +1,16 @@
 import { FC, useState } from 'react';
-import { Wrapper, StyledImage, Description } from './massage.styles';
+import {
+  Wrapper,
+  StyledImage,
+  Description,
+  DescriptionWrapper,
+  Title,
+  ParagraphWrapper,
+} from './massage.styles';
 import MassagePhoto from 'assets/massagePhotos/massage.jpg';
 import Button from 'components/atoms/button/button';
 import Modal from 'react-modal';
+
 const customStyles = {
   content: {
     top: '50%',
@@ -12,9 +20,14 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '300px',
-    height: '400px',
+    height: '450px',
+    borderRadius: '10px',
+    border: 'none',
+    backgroundColor: 'rgb(49,151,243)',
+    color: 'white',
   },
 };
+
 const Massage: FC = () => {
   const [showDescription, setShowDescription] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -53,14 +66,16 @@ const Massage: FC = () => {
         contentLabel="Example Modal"
         style={customStyles}
       >
-        <h1>Informacje o typie masażu</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi
-          eaque deleniti ea! Libero tempora quaerat quos porro totam, debitis
-          doloribus similique est maiores iure cupiditate temporibus placeat
-          beatae dicta? cena: <h2>150zl/h</h2>
-        </p>
-        <button onClick={closeModal}>Przeczytałem ! </button>
+        <DescriptionWrapper>
+          <Title>Informacje o typie masażu</Title>
+          <ParagraphWrapper>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi
+            eaque deleniti ea! Libero tempora quaerat quos porro totam, debitis
+            doloribus similique est maiores iure cupiditate temporibus placeat
+            beatae dicta? cena: <h2>150zl/h</h2>
+          </ParagraphWrapper>
+          <Button content="Umów wizytę" onClick={closeModal} />
+        </DescriptionWrapper>
       </Modal>
     </>
   );
