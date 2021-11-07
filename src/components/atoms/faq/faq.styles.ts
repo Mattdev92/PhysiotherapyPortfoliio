@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   align-self: center;
   justify-self: center;
-  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  width: 300px;
+  &:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+  }
 `;

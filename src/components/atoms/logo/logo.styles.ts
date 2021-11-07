@@ -9,6 +9,7 @@ export const StyledText = styled(Text)`
   align-items: center;
   cursor: pointer;
   @media (max-width: 580px) {
+    margin: 30px 0 50px;
     background: white;
   }
 `;

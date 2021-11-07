@@ -26,7 +26,7 @@ export const SocialNetworkUrl = [
 // Main Page Template Data
 export const mainContentDataFontWight = ['S', 'S'];
 export const mainContentDataFontSize = ['S', 'XS'];
-export const mainContentDataFontSizeWidth = ['XS', 'XXS'];
+export const mainContentDataFontSizeWidth = ['S', 'XS'];
 
 // About View Content Data
 export const aboutContentData = [
@@ -66,6 +66,38 @@ export const massageData = [
 
 // FAQ
 export const faqData = [
+  {
+    title: 'Co ja tu robie',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czemu masaż żwirem ? ',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czemu masaż miodem ?',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czy masaż szkłem jest skuteczny ?',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Co ja tu robie',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czemu masaż żwirem ? ',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czemu masaż miodem ?',
+    description: 'blablaf sadf sad asd sa as ',
+  },
+  {
+    title: 'Czy masaż szkłem jest skuteczny ?',
+    description: 'blablaf sadf sad asd sa as ',
+  },
   {
     title: 'Co ja tu robie',
     description: 'blablaf sadf sad asd sa as ',

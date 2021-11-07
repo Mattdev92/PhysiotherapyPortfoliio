@@ -12,4 +12,5 @@ export interface TextProps {
   click?: () => void;
   pointer?: boolean;
   center?: boolean;
+  hover?: boolean;
 }

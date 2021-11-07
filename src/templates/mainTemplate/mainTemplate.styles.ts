@@ -5,7 +5,7 @@ export const MainWrapper = styled.main`
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   @media (max-width: 1150px) {
     grid-template-columns: repeat(10, 1fr);
   }
@@ -16,10 +16,11 @@ export const MainWrapper = styled.main`
     grid-template-columns: repeat(6, 1fr);
   }
   @media (max-width: 580px) {
-    margin-top: 30px;
+    padding-top: 15px;
     height: 100%;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 `;

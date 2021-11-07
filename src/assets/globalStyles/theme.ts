@@ -3,6 +3,7 @@ export interface StyleClosetTheme {
     main: string;
     content: string;
     helper: string;
+    white: string;
   };
   fontFamily: {
     mainFont: string;
@@ -33,6 +34,7 @@ export const theme: StyleClosetTheme = {
     main: '#C3C6CD',
     content: '#F8FBFF',
     helper: '#36CBEF',
+    white: 'white',
   },
   fontFamily: {
     mainFont: `Encode Sans SC`,

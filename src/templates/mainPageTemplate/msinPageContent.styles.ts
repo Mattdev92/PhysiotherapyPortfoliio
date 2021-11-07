@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  width: 200px;
-  height: 30px;
+  flex-direction: column;
   justify-content: left;
   align-items: center;
 `;

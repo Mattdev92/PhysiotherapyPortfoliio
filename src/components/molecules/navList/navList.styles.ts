@@ -18,6 +18,9 @@ export const StyledLink = styled(NavLink)`
   position: relative;
   text-decoration: none;
   color: black;
+  &:hover {
+    transform: scale(1.2);
+  }
   &.active {
     &:before {
       content: '';
@@ -59,7 +62,7 @@ export const NavWrapper = styled.div<NavWrapperProps>`
     height: 100vh;
     left: 0;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     transform: ${({ mobile }) =>
       mobile ? 'translateX(0px)' : 'translateX(-200px)'};
     transition: transform 0.5s ease-in;

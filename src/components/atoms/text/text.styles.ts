@@ -26,6 +26,7 @@ export const TextContainer = styled.span<TextProps>`
       specialFont ? theme.fontSize['XS'] : theme.fontSize[fontSize]};
     margin-left: 5px;
     margin-right: 5px;
-    text-align: justify;
+    text-align: ${({ center }) => (center ? 'center' : 'justify')};
+    align-self: ${({ center }) => (center ? 'center' : 'auto')};
   }
 `;

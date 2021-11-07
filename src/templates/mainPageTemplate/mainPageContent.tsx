@@ -43,8 +43,9 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
 
   return (
     <MainTemplate>
-      <ContentTemplate refContent={refContent}>
+      <ContentTemplate refContent={refContent} mail={mail ? true : false}>
         {children}
+        {mail && <h1>Zadzwoń lub napisz !</h1>}
         {content.map((item, i) => (
           <Text
             pointer={pointer}
@@ -56,15 +57,9 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
                 ? mainContentDataFontSize[i]
                 : mainContentDataFontSizeWidth[i]
             }
-            margin={`20px 0px`}
-            background={
-              item === 'Licencjonowany fizjoterapeuta' ||
-              item === 'Cześć tu Błażej Pietroń !' ||
-              item === '696 752 302'
-                ? true
-                : false
-            }
-            center={false}
+            margin={mail ? '10px' : `20px 0px`}
+            background={false}
+            center={item === 'Licencjonowany fizjoterapeuta' ? true : false}
           />
         ))}
         {mail && (

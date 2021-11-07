@@ -28,11 +28,12 @@ const NavList: FC<NavListProps> = ({ refNav }) => {
             <Text
               content={item}
               key={item}
-              fontSize={'XS'}
+              fontSize={window.innerWidth <= 580 ? 'S' : 'XS'}
               fontWeight={'M'}
               margin={'17px'}
               pointer={true}
               color={window.innerWidth <= 580 ? 'white' : 'black'}
+              hover
             />
           </StyledLink>
         ))}
