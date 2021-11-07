@@ -4,7 +4,6 @@ Hi ! It's Portfolio created for Proffesional Physiotherapist
 
 ## How it works
 live version: https://blazej-fizjo2021.netlify.app/
-![Fizjo](http://url/to/fizjo.png)
 
 ## Getting Started
 1. git clone 
