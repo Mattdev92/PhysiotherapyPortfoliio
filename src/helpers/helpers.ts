@@ -47,51 +47,57 @@ export const bannerText = [
 // Massages
 export const massageData = [
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Masaż klasyczny',
+    description:
+      'Jest to masaż leczniczy, rozluźniający obolałe mięśnie i stawy.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing',
+    title: 'Masaż relaksacyjny',
+    description:
+      'Rodzaj masażu klasycznego, bardziej niż na leczenie uwaga skierowana jest na relaksację i odprężenie ciała i ducha.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Masaż tkanek głębokich',
+    description:
+      'Intensywny i czasami bolesny masaż (jest to tzw. przyjemny ból), skierowany na leczenie bólów pochodzenia mięśniowego m.in. bólów odcinka lędźwiowego kręgosłupa.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Masaż sportowy',
+    description:
+      'Masaż o największej intensywności, przeznaczony dla sportowców tak dla profesjonalistów jak i amatorów. Regeneracja mięśni po intensywnym treningu, wspomaga szybszy powrót mięśnia do optymalnej pracy.',
   },
 ];
 
 // FAQ
 export const faqData = [
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Bolą mnie plecy, czy po masażu poczuję się od razu lepiej?',
+    description:
+      'Najczęściej tak, masaż rozluźnia nadmiernie napięte mięśnie, co często jest główną przyczyną bólów kręgosłupa.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Czy sam masaż pomoże na bóle kręgosłupa?',
+    description:
+      'Nie, masaż może działać doraźnie, ważna jest regularna aktywność fizyczna, ćwiczenia zorientowane na dolegliwości bólowe wzmacniające osłabione mięśnie i rozluźniające nadmiernie napięte, zdrowa dieta i tzw. Higiena kręgosłupa (np. prawidłowe podnoszenie ciężkich przedmiotów, postawa ciała w czasie siedzenia, stania, chodzenia)',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Jak często chodzić na masaż?',
+    description:
+      'To zależy od tego jak się czujesz i jakie są Twoje możliwości finansowe. Już 1 wizyta w miesiącu może mieć duży wpływ na jakość Twojego życia. Przy mocno napiętych mięśniach i  stresującej, bądź fizycznej pracy polecam masaż raz na tydzień.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Czy jest możliwość wykupienia pakietu masażów?',
+    description:
+      'Tak, pakiety masażów i stosowny do nich rabat ustalany indywidualnie.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Nic mnie nie boli, czy mogę skorzystać z usługi masażu?',
+    description:
+      'Tak, masaż jest dobry nie tylko dla ciała, ale również dla ducha. Jest to również zabieg wpływający na rozluźnienie i odprężenie, przyjemność w czystej postaci.',
   },
   {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
-  },
-  {
-    title: 'Lorem Ipsum',
-    description: 'Lorem Ipsum is simply dummy text of the printing ',
+    title: 'Czy posiadam gabinet stacjonarny?',
+    description:
+      'Na ten moment nie posiadam, dojeżdżam do pacjentów do domów i hoteli z własnym stołem do masażu',
   },
 ];

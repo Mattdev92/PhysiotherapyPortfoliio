@@ -10,7 +10,7 @@ export const StyledButton = styled.button`
   background: ${({ theme }) => theme.colors.white};
   border: 2px solid ${({ theme }) => theme.colors.helper};
   border-radius: 5px;
-  width: 200px;
+  width: 250px;
   font-size: 20px;
   max-width: 100%;
   &:hover {

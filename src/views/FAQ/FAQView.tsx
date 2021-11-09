@@ -5,9 +5,13 @@ import { faqData } from 'helpers/helpers';
 import Faq from 'components/atoms/faq/faq';
 import styled from 'styled-components';
 
-export const Title = styled.h1`
+export const Title = styled.h3`
   max-width: 200px;
   text-align: center;
+`;
+export const Wrapper = styled.span`
+  font-size: medium;
+  text-align: justify;
 `;
 const FAQView: FC = () => {
   return (
@@ -16,7 +20,7 @@ const FAQView: FC = () => {
         {faqData.map(({ title, description }, i: number) => (
           <Faq key={i}>
             <Title>{title}</Title>
-            <p>{description}</p>
+            <Wrapper>{description}</Wrapper>
           </Faq>
         ))}
       </GridContent>

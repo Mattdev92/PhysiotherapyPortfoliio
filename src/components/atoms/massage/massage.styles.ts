@@ -58,8 +58,13 @@ export const Title = styled.h1`
   justify-content: center;
   text-align: center;
 `;
+
 export const ParagraphWrapper = styled.p`
+  display: flex;
+  flex-direction: column;
   text-align: justify;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export const DescriptionWrapper = styled.div`

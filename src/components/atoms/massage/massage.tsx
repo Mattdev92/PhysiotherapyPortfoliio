@@ -10,6 +10,9 @@ import {
 import MassagePhoto from 'assets/massagePhotos/massage.jpg';
 import Button from 'components/atoms/button/button';
 import Modal from 'react-modal';
+import { MassageProps } from './massage.types';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const customStyles = {
   content: {
@@ -25,10 +28,32 @@ const customStyles = {
     border: 'none',
     backgroundColor: 'rgb(49,151,243)',
     color: 'white',
+    overflow: 'scroll',
   },
 };
-
-const Massage: FC = () => {
+const desktopStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    width: '400px',
+    height: '450px',
+    borderRadius: '10px',
+    border: 'none',
+    backgroundColor: 'rgb(49,151,243)',
+    color: 'white',
+  },
+};
+const StyledLink = styled(Link)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+`;
+const Massage: FC<MassageProps> = ({ data }) => {
   const [showDescription, setShowDescription] = useState(false);
   const [modalIsOpen, setIsOpen] = useState(false);
   function closeModal() {
@@ -55,8 +80,8 @@ const Massage: FC = () => {
           show={showDescription}
           onClick={() => setShowDescription(false)}
         >
-          <h2>Masaż</h2>
-          {showDescription && 'Lorem ipsum bla bla bla itp itd'}
+          <h2>{data.title}</h2>
+          {showDescription && data.description}
           <Button content="OPIS" onClick={() => setIsOpen(true)} />
         </Description>
       </Wrapper>
@@ -64,17 +89,17 @@ const Massage: FC = () => {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Example Modal"
-        style={customStyles}
+        style={window.innerWidth < 400 ? customStyles : desktopStyles}
       >
         <DescriptionWrapper>
-          <Title>Informacje o typie masażu</Title>
+          <Title>{data.title}</Title>
           <ParagraphWrapper>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sequi
-            eaque deleniti ea! Libero tempora quaerat quos porro totam, debitis
-            doloribus similique est maiores iure cupiditate temporibus placeat
-            beatae dicta? cena: <h2>150zl/h</h2>
+            {data.description}
+            <h3>Masaż 100zł/h, kolejne 120zł/h</h3>
           </ParagraphWrapper>
-          <Button content="Umów wizytę" onClick={closeModal} />
+          <StyledLink to={'/contact'}>
+            <Button content="Napisz / zadzwoń" onClick={closeModal} />
+          </StyledLink>
         </DescriptionWrapper>
       </Modal>
     </>

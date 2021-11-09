@@ -64,7 +64,7 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
         ))}
         {mail && (
           <ButtonWrapper>
-            <Button content={'Blazej@gmail.com'} />
+            <Button content={'blazpie12@gmail.com'} />
           </ButtonWrapper>
         )}
       </ContentTemplate>
