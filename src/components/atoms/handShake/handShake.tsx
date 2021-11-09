@@ -5,7 +5,7 @@ import { StyledCircle } from './handShake.styles';
 
 const HandShake: FC = () => {
   return (
-    <StyledCircle onClick={() => window.open('mailto:blazej@wp.pl')}>
+    <StyledCircle onClick={() => window.open('mailto:blazpie12@gmail.com')}>
       <SvgIcon Icon={HandShakeIcon} width={110} height={76} />
     </StyledCircle>
   );

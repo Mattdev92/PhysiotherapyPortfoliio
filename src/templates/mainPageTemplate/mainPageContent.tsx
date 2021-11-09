@@ -64,7 +64,10 @@ const MainPageTemplate: FC<MainPageTemplateProps> = ({
         ))}
         {mail && (
           <ButtonWrapper>
-            <Button content={'blazpie12@gmail.com'} />
+            <Button
+              content={'blazpie12@gmail.com'}
+              onClick={() => window.open('mailto:blazpie12@gmail.com')}
+            />
           </ButtonWrapper>
         )}
       </ContentTemplate>
