@@ -8,7 +8,6 @@ export const StyledCircle = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   border-radius: 100%;
   background: ${({ theme }) => theme.colors.helper};
   cursor: pointer;

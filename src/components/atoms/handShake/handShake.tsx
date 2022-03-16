@@ -4,8 +4,11 @@ import { ReactComponent as HandShakeIcon } from 'assets/handShakeIcon/hand-shake
 import { StyledCircle } from './handShake.styles';
 
 const HandShake: FC = () => {
+  const handleClick = () => {
+    window.open('mailto:blazpie12@gmail.com');
+  };
   return (
-    <StyledCircle onClick={() => window.open('mailto:blazpie12@gmail.com')}>
+    <StyledCircle onClick={handleClick}>
       <SvgIcon Icon={HandShakeIcon} width={110} height={76} />
     </StyledCircle>
   );
