@@ -8,7 +8,6 @@ export const Wrapper = styled.div`
   align-items: left;
   align-self: flex-start;
   justify-self: center;
-  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   height: 250px;
   width: 300px;

@@ -9,13 +9,15 @@ export const Title = styled.h3`
   text-align: left;
   max-width: 200px;
   min-width: 300px;
+  font-family: ${({ theme }) => theme.fontFamily.mainFont};
+  font-size: 16px;
 `;
 export const Wrapper = styled.span`
   font-size: medium;
   text-align: justify;
   font-family: 'Smooch Sans', sans-serif;
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 14px;
 `;
 const FAQView: FC = () => {
   return (
