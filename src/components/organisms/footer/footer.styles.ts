@@ -24,3 +24,8 @@ export const Wrapper = styled.div`
     grid-column: 1/7;
   }
 `;
+
+export const FooterLink = styled.a`
+  text-decoration: none;
+  color: white;
+`;
