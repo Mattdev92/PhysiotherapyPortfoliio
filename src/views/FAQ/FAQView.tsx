@@ -14,7 +14,7 @@ export const Title = styled.h3`
 `;
 export const Wrapper = styled.span`
   text-align: justify;
-  font-family: 'Smooch Sans', sans-serif;
+  font-family: ${({ theme }) => theme.fontFamily.mainFont};
   letter-spacing: 1px;
   font-size: 14px;
 `;
