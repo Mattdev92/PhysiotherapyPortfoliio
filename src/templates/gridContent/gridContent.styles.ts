@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-
-export const Wrapper = styled.div`
-  margin: 0;
+interface Props {
+  height: number;
+}
+export const Wrapper = styled.div<Props>`
+  margin: 5px;
   padding: 10px;
   grid-column: 1/11;
   grid-row: 1/4;
@@ -10,19 +12,8 @@ export const Wrapper = styled.div`
   overflow: scroll;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: auto;
+  grid-auto-rows: ${({ height }) => `minmax(${height}px, 1fr)`};
   align-items: center;
   justify-content: center;
-  gap: 10px 0;
-  align-self: center;
-  /* @media (max-width: 580px) {
-    align-items: start;
-    justify-content: start;
-    align-self: start;
-    justify-self: start;
-  }
-  @media (max-width: 800px) {
-    align-items: start;
-    justify-content: start;
-  } */
+  gap: 15px 15px;
 `;

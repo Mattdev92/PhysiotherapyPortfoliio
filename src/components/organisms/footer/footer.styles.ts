@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   grid-column: 1/13;
   grid-row: 12/13;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +11,9 @@ export const Wrapper = styled.div`
   color: white;
   background: black;
   opacity: 90%;
+  max-height: 30px;
+  align-self: end;
+  opacity: 70%;
   @media (max-width: 1150px) {
     grid-column: 1/11;
   }

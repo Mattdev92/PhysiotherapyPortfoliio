@@ -6,17 +6,21 @@ import Faq from 'components/atoms/faq/faq';
 import styled from 'styled-components';
 
 export const Title = styled.h3`
+  text-align: left;
   max-width: 200px;
-  text-align: center;
+  min-width: 300px;
 `;
 export const Wrapper = styled.span`
   font-size: medium;
   text-align: justify;
+  font-family: 'Smooch Sans', sans-serif;
+  letter-spacing: 1px;
+  font-size: 13px;
 `;
 const FAQView: FC = () => {
   return (
     <MainTemplate>
-      <GridContent>
+      <GridContent height={300}>
         {faqData.map(({ title, description }, i: number) => (
           <Faq key={i}>
             <Title>{title}</Title>

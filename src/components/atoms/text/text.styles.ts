@@ -19,6 +19,7 @@ export const TextContainer = styled.span<TextProps>`
   cursor: ${({ pointer = false }) => (pointer ? 'pointer' : 'default')};
   text-align: ${({ center }) => (center ? 'center' : 'left')};
   text-decoration: none;
+  letter-spacing: 1px;
   @media (max-width: 580px) {
     width: auto;
     display: flex;

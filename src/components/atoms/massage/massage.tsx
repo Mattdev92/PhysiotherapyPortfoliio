@@ -23,11 +23,11 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '300px',
-    height: '450px',
+    height: '300px',
     borderRadius: '10px',
     border: 'none',
-    backgroundColor: 'rgb(49,151,243)',
-    color: 'white',
+    backgroundColor: `#C3C6CD`,
+    color: 'black',
     overflow: 'scroll',
   },
 };
@@ -40,11 +40,11 @@ const desktopStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '400px',
-    height: '450px',
+    height: '400px',
     borderRadius: '10px',
     border: 'none',
-    backgroundColor: 'rgb(49,151,243)',
-    color: 'white',
+    backgroundColor: `#C3C6CD`,
+    color: 'black',
   },
 };
 const StyledLink = styled(Link)`
@@ -95,7 +95,8 @@ const Massage: FC<MassageProps> = ({ data }) => {
           <Title>{data.title}</Title>
           <ParagraphWrapper>
             {data.description}
-            <h3>Masaż 100zł/h, kolejne 120zł/h</h3>
+            <h3>Cena usługi 100zł/h</h3>
+            <h5>*Kolejne usługi 120zł/h</h5>
           </ParagraphWrapper>
           <StyledLink to={'/contact'}>
             <Button content="Napisz / zadzwoń" onClick={closeModal} />

@@ -12,7 +12,7 @@ const ContentWrapper = styled.div`
 const MassageView: FC = () => {
   return (
     <MainTemplate>
-      <GridContent>
+      <GridContent height={500}>
         {massageData.map((data, i) => (
           <ContentWrapper>
             <h1>{data.title}</h1>

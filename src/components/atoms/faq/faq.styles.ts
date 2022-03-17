@@ -5,10 +5,11 @@ export const Wrapper = styled.div`
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-self: center;
+  align-items: left;
+  align-self: flex-start;
   justify-self: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
   height: 250px;
   width: 300px;
   &:hover {
