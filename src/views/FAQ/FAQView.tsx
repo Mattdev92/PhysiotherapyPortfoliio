@@ -16,7 +16,7 @@ export const Wrapper = styled.span`
   text-align: justify;
   font-family: ${({ theme }) => theme.fontFamily.mainFont};
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 12px;
 `;
 const FAQView: FC = () => {
   return (
