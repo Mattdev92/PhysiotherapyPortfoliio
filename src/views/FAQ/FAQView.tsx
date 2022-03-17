@@ -13,7 +13,6 @@ export const Title = styled.h3`
   font-size: 16px;
 `;
 export const Wrapper = styled.span`
-  font-size: medium;
   text-align: justify;
   font-family: 'Smooch Sans', sans-serif;
   letter-spacing: 1px;
