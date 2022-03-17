@@ -23,7 +23,7 @@ const customStyles = {
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
     width: '300px',
-    height: '450px',
+    height: '500px',
     borderRadius: '10px',
     border: 'none',
     backgroundColor: `#C3C6CD`,
